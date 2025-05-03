@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Share2, Award, TrendingUp, Map, Coffee } from 'lucide-react';
+import { Share2, Award, TrendingUp, Map, Coffee, X } from 'lucide-react';
 import { useFinancialData } from '../backend/FinancialDataContext';
+import ChatInterface from './ChatInterface';
 
 // Get image path function
 const getImagePath = (imageName) => {
@@ -25,11 +26,11 @@ const Confetti = () => {
       for (let i = 0; i < 50; i++) {
         newParticles.push({
           id: i,
-          x: Math.random() * 100, // position across width (%)
-          y: 100 + Math.random() * 20, // start below the container
-          size: Math.random() * 8 + 4, // size between 4-12px
+          x: Math.random() * 100,
+          y: 100 + Math.random() * 20,
+          size: Math.random() * 8 + 4,
           color: colors[Math.floor(Math.random() * colors.length)],
-          speed: Math.random() * 3 + 1, // speed between 1-4
+          speed: Math.random() * 3 + 1,
           rotation: Math.random() * 360
         });
       }
@@ -37,16 +38,12 @@ const Confetti = () => {
       setParticles(newParticles);
     };
     
-    // Call once to initialize
     createParticles();
     
-    // Animation loop
     const animationId = setInterval(() => {
       setParticles(prev => prev.map(particle => {
-        // Move particle upward
         const newY = particle.y - particle.speed;
         
-        // If particle has gone off the top, reset from bottom
         if (newY < -10) {
           return {
             ...particle,
@@ -63,7 +60,6 @@ const Confetti = () => {
       }));
     }, 50);
     
-    // Cleanup
     return () => clearInterval(animationId);
   }, []);
   
@@ -80,7 +76,7 @@ const Confetti = () => {
             height: `${particle.size}px`,
             backgroundColor: particle.color,
             transform: `rotate(${particle.rotation}deg)`,
-            opacity: (100 - particle.y) / 100 // fade out as it rises
+            opacity: (100 - particle.y) / 100
           }}
         />
       ))}
@@ -91,15 +87,14 @@ const Confetti = () => {
 const InsightsScreen = ({ setCurrentScreen }) => {
   const { privacyLevel, insights, shareInsight, financialData } = useFinancialData();
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showChat, setShowChat] = useState(false);
   
-  // Start confetti when component mounts
   useEffect(() => {
     setShowConfetti(true);
     
-    // Optional: Hide confetti after some time
     const timer = setTimeout(() => {
       setShowConfetti(false);
-    }, 10000); // Stop after 10 seconds
+    }, 10000);
     
     return () => clearTimeout(timer);
   }, []);
@@ -108,7 +103,6 @@ const InsightsScreen = ({ setCurrentScreen }) => {
     try {
       const result = await shareInsight('financial-summary');
       if (result && result.shareUrl) {
-        // In a real app, you would show a toast notification or copy to clipboard
         alert(`Share link created: ${result.shareUrl}`);
       }
     } catch (err) {
@@ -189,42 +183,48 @@ const InsightsScreen = ({ setCurrentScreen }) => {
   };
   
   // Get the character image
- // Get the character image
-const getCharacterImage = () => {
+  const getCharacterImage = () => {
     if (!financialData || !financialData.persona) {
       return null;
     }
     
     const imagePath = financialData.persona.image;
     return (
-      <div className="mb-6 flex justify-center relative">
+      <div className="mb-4 flex justify-center relative">
         {showConfetti && <Confetti />}
-        <div className="relative">
-          {/* Animated rainbow border background */}
+        <div 
+          className="relative cursor-pointer transition-transform hover:scale-105"
+          onClick={() => setShowChat(true)}
+        >
+          {/* Animated rainbow border background - thinner */}
           <div 
             className="absolute inset-0 rounded-lg" 
             style={{
               background: 'linear-gradient(45deg, #f43f5e, #fb923c, #fbbf24, #4ade80, #22d3ee, #818cf8, #a855f7, #f43f5e)',
               backgroundSize: '400% 400%',
               animation: 'rainbow-move 3s ease infinite',
-              transform: 'scale(1.0)',
+              transform: 'scale(1.02)',
               zIndex: 0
             }}
           ></div>
           
           {/* Black padding for inner border */}
-          <div className="absolute inset-0 m-1.5 rounded-lg bg-black" style={{ zIndex: 1 }}></div>
+          <div className="absolute inset-0 m-0.5 rounded-lg bg-black" style={{ zIndex: 1 }}></div>
           
-          {/* Actual image with small padding */}
+          {/* Actual image */}
           <img 
             src={getImagePath(imagePath)} 
             alt={financialData.persona.character} 
-            className="h-48 w-48 object-contain relative rounded-lg p-4"
+            className="h-40 w-40 object-contain relative rounded-lg p-1"
             style={{ zIndex: 2 }} 
           />
+          
+          {/* "Chat with me" indicator */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs py-1 rounded-b-lg text-center" style={{ zIndex: 3 }}>
+            Click to chat with me!
+          </div>
         </div>
         
-        {/* Add the animation keyframes to the head of the document */}
         <style dangerouslySetInnerHTML={{
           __html: `
             @keyframes rainbow-move {
@@ -296,6 +296,26 @@ const getCharacterImage = () => {
           </button>
         </div>
       </div>
+      
+      {/* Chat Interface Modal */}
+      {showChat && financialData?.persona && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+          <div className="bg-gray-900 rounded-xl max-w-sm w-full max-h-[90vh] flex flex-col border border-gray-800 relative">
+            <button 
+              className="absolute right-2 top-2 text-gray-400 hover:text-white p-1 rounded-full"
+              onClick={() => setShowChat(false)}
+            >
+              <X size={20} />
+            </button>
+            <ChatInterface 
+              character={financialData.persona.character} 
+              persona={financialData.persona.type}
+              imagePath={financialData.persona.image}
+              onClose={() => setShowChat(false)}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

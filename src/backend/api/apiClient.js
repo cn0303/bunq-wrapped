@@ -50,7 +50,7 @@ const mockFinancialData = {
   user: {
     id: 'user123',
     name: 'John Doe',
-    financialPersonality: 'Budgeting Maestro', // This determines which character is shown
+    financialPersonality: 'Spontaneous Spender', // This determines which character is shown
     savingRate: {
       current: 15,
       previous: 10
