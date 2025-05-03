@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 14:30:00,Salary Deposit,4500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-04-10 09:15:00,Supermarket,-75.5,Groceries,Utrecht,groceries,Main Checking
+2025-04-15 18:45:00,Netflix,-12.99,Monthly subscription,Amsterdam,subscriptions,Main Checking
+2025-04-20 10:00:00,Investment Firm,-3000.0,Stock purchase,Amsterdam,finance,Investment Account
+2025-05-01 14:30:00,Salary Deposit,4500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-05-05 16:00:00,Restaurant,-85.75,Dinner out,Rotterdam,food,Main Checking
+2025-05-15 11:00:00,Health Insurance,-120.0,Monthly premium,Amsterdam,health,Main Checking
+2025-05-20 09:30:00,Stock Trading,1500.0,Dividend income,Amsterdam,finance,Investment Account
+2025-06-01 14:30:00,Salary Deposit,4500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-06-15 10:00:00,Bookstore,-30.0,Investment book,Amsterdam,others,Main Checking
+2025-04-02 10:15:30,Salary,3500.0,Monthly salary,Amsterdam,salary,Main Income
+2025-04-10 14:45:00,Supermarket,-75.5,Groceries,Utrecht,groceries,Daily Expenses
+2025-04-15 19:30:00,Netflix,-12.99,Subscription fee,Amsterdam,subscriptions,Entertainment
+2025-04-20 09:00:00,Investment Firm,500.0,Dividend payout,Amsterdam,finance,Investment Income
+2025-05-05 16:20:00,Market,-200.0,Stock purchase,Rotterdam,others,Investment Account
+2025-05-11 11:00:00,Local Café,-25.0,Lunch,Amsterdam,food,Daily Expenses
+2025-05-18 15:45:00,Health Insurance,-80.0,Monthly premium,Amsterdam,health,Health Expenses
+2025-06-01 08:30:00,Rent Payment,-1200.0,Monthly rent,Amsterdam,rent,Housing
+2025-06-15 17:00:00,Investment Broker,750.0,Profit from sale,Amsterdam,finance,Investment Income
+2025-06-25 13:30:00,Cinema,-30.0,Movie ticket,Amsterdam,entertainment,Entertainment
+2025-04-02 10:15:00,Salary Deposit,4500.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-05 12:30:00,IKEA,-150.75,Home Goods,Amsterdam,groceries,Main Checking
+2025-04-10 14:45:00,Vanguard Investments,-2000.0,Stock Purchase,Amsterdam,finance,Investment Account
+2025-04-15 18:00:00,Restaurant De Kas,-75.5,Dinner Out,Amsterdam,food,Main Checking
+2025-04-20 09:00:00,ABN AMRO,-30.0,Bank Fee,Amsterdam,others,Main Checking
+2025-05-01 10:00:00,Freelance Project,1200.0,Consulting Income,Amsterdam,salary,Main Checking
+2025-05-08 15:30:00,Netflix,-12.99,Monthly Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-15 11:45:00,Amazon,-59.99,Books Purchase,Amsterdam,personal,Main Checking
+2025-06-01 09:30:00,Tesla,-5000.0,Car Investment,Amsterdam,finance,Investment Account
+2025-06-25 16:00:00,Dividend Payment,300.0,Stock Dividends,Amsterdam,finance,Investment Account
+2025-04-03 14:30:00,Salary Deposit,3500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-04-10 11:15:00,Grocer Mart,-85.75,Weekly groceries,Utrecht,groceries,Main Checking
+2025-04-15 16:00:00,Netflix,-12.99,Monthly subscription,Amsterdam,subscriptions,Main Checking
+2025-04-22 09:45:00,Investment Firm,1500.0,Investment return,Amsterdam,finance,Investment Account
+2025-05-01 13:00:00,Tech Conference,-250.0,Conference ticket,Rotterdam,entertainment,Main Checking
+2025-05-10 08:00:00,Health Insurance,-120.5,Monthly premium,Amsterdam,health,Main Checking
+2025-05-18 10:30:00,Local Bistro,-45.2,Dinner out,Den Haag,food,Main Checking
+2025-06-05 15:00:00,Stock Purchase,-500.0,Stock investment,Amsterdam,finance,Investment Account
+2025-06-15 12:00:00,Monthly Rent,-1200.0,Apartment rent,Amsterdam,rent,Main Checking
+2025-06-28 17:30:00,Consulting Fee,800.0,Freelance work,Amsterdam,personal,Main Checking
+2025-04-02 14:30:00,Investment Firm,1500.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-05 09:15:00,Grocery Store,-75.5,Weekly Groceries,Utrecht,groceries,Main Checking
+2025-04-10 19:00:00,Cinema,-25.0,Movie Night,Rotterdam,entertainment,Main Checking
+2025-04-15 12:00:00,Stock Exchange,300.0,Dividend Payout,Amsterdam,finance,Investment Account
+2025-04-20 10:45:00,Health Insurance,-150.0,Monthly Premium,Amsterdam,health,Main Checking
+2025-05-01 16:00:00,Real Estate Fund,2000.0,Investment Income,Amsterdam,finance,Investment Account
+2025-05-05 11:30:00,Restaurant,-60.0,Dinner Out,The Hague,food,Main Checking
+2025-05-15 14:00:00,Online Course,-200.0,Investment Seminar,Amsterdam,subscriptions,Main Checking
+2025-06-01 09:00:00,Crowdfunding Platform,-500.0,Startup Investment,Amsterdam,personal,Investment Account
+2025-06-25 18:30:00,Finance Magazine,-30.0,Annual Subscription,Amsterdam,subscriptions,Main Checking
+2025-04-05 14:30:00,Stock Market,1500.0,Dividend Income,Amsterdam,finance,Investment Portfolio
+2025-04-12 10:15:00,Supermarkt,-75.5,Groceries,Rotterdam,groceries,Main Account
+2025-04-20 09:00:00,Tech Stocks,2500.0,Stock Purchase,Utrecht,finance,Investment Portfolio
+2025-04-25 20:45:00,Restaurant,-120.0,Dinner Out,The Hague,food,Main Account
+2025-05-02 16:00:00,Health Insurance,-150.0,Monthly Payment,Amsterdam,health,Main Account
+2025-05-10 11:30:00,Real Estate,3000.0,Rental Income,Amsterdam,finance,Investment Portfolio
+2025-05-15 13:00:00,Cinema,-35.0,Movie Ticket,Eindhoven,entertainment,Main Account
+2025-05-22 09:30:00,Online Course,-200.0,Investment Course,Amsterdam,subscriptions,Main Account
+2025-06-10 15:00:00,Crypto Exchange,1000.0,Crypto Sale,Amsterdam,finance,Investment Portfolio
+2025-06-25 19:00:00,Local Market,-50.0,Fresh Produce,Amsterdam,groceries,Main Account
+2025-04-02 10:15:00,Salary Deposit,5000.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-05 14:30:00,Supermarket,-75.5,Grocery Shopping,Rotterdam,groceries,Main Checking
+2025-04-10 12:00:00,ETF Investment,-1500.0,Stock Purchase,Amsterdam,finance,Investment Account
+2025-04-15 18:45:00,Cinema,-25.0,Movie Night,Utrecht,entertainment,Main Checking
+2025-04-20 08:30:00,Health Insurance,-200.0,Monthly Premium,Amsterdam,health,Main Checking
+2025-05-01 09:00:00,Salary Deposit,5000.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-05-05 16:20:00,Investment Fund,-2000.0,Fund Contribution,Amsterdam,finance,Investment Account
+2025-05-10 13:00:00,Restaurant,-60.0,Dinner Out,The Hague,food,Main Checking
+2025-06-01 10:15:00,Salary Deposit,5000.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-06-15 17:30:00,Online Course,-150.0,Skill Learning,Amsterdam,subscriptions,Main Checking
+2025-04-05 14:30:00,Investment Firm,1500.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-12 09:15:00,Supermarket,-45.75,Groceries,Rotterdam,groceries,Main Checking
+2025-04-20 18:00:00,Real Estate Co.,-1200.0,April Rent,Utrecht,rent,Main Checking
+2025-05-01 10:00:00,Stock Exchange,2500.0,Dividend Income,Amsterdam,finance,Investment Account
+2025-05-10 20:30:00,Restaurant,-75.5,Dinner Out,The Hague,food,Main Checking
+2025-05-15 11:45:00,Streaming Service,-12.99,Monthly Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-25 14:00:00,Crypto Exchange,3000.0,Crypto Investment,Online,others,Investment Account
+2025-06-02 09:00:00,Health Insurance,-200.0,Monthly Premium,Amsterdam,health,Main Checking
+2025-06-15 17:00:00,Bookstore,-30.0,Investment Books,Eindhoven,personal,Main Checking
+2025-06-28 16:30:00,Investment Firm,500.0,Bonus Payment,Amsterdam,salary,Main Checking
+2025-04-02 09:15:00,Salary Deposit,3000.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-10 14:30:00,Bol.com,-45.75,Books Purchase,Utrecht,personal,Main Checking
+2025-04-15 11:00:00,ABN AMRO,1500.0,Investment Return,Amsterdam,finance,Investment Account
+2025-04-20 19:45:00,Albert Heijn,-60.25,Grocery Shopping,Rotterdam,groceries,Main Checking
+2025-05-05 13:00:00,Netflix,-12.99,Monthly Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-12 16:30:00,Investment Firm,-2000.0,New Stocks,Amsterdam,finance,Investment Account
+2025-05-20 10:00:00,Café de Jaren,-25.5,Lunch Out,Amsterdam,food,Main Checking
+2025-06-01 09:00:00,Salary Deposit,3000.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-06-15 15:30:00,Fiverr,-100.0,Freelance Services,Amsterdam,others,Main Checking
+2025-06-25 18:00:00,Gym Membership,-45.0,Monthly Fee,Amsterdam,health,Main Checking
+2025-04-05 14:30:00,ABN AMRO,1500.0,Salary,Amsterdam,salary,Savings Account
+2025-04-12 09:15:00,Ahold Delhaize,-80.5,Groceries,Utrecht,groceries,Checking Account
+2025-04-15 18:45:00,Netflix,-12.99,Subscription,Online,subscriptions,Checking Account
+2025-05-01 10:00:00,Investment Co.,2500.0,Investment,Amsterdam,finance,Investment Account
+2025-05-10 19:00:00,Bol.com,-45.75,Books,Online,others,Checking Account
+2025-05-15 15:30:00,Health Insurance,-200.0,Health,Amsterdam,health,Checking Account
+2025-05-20 08:00:00,KPN,-50.0,Internet,Amsterdam,subscriptions,Checking Account
+2025-05-25 13:00:00,Zalando,-120.45,Clothing,Online,personal,Checking Account
+2025-06-01 09:00:00,Euronext,300.0,Dividends,Amsterdam,finance,Investment Account
+2025-06-15 17:30:00,Uber Eats,-35.9,Dinner,Rotterdam,food,Checking Account

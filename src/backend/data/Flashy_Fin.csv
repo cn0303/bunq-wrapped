@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 14:23:45,Zara,-89.99,Clothing,Amsterdam,personal,Main Checking
+2025-04-10 18:45:12,Bioscoop,-15.5,Movie Ticket,Rotterdam,entertainment,Main Checking
+2025-04-15 12:00:00,Albert Heijn,-45.3,Groceries,Utrecht,groceries,Main Checking
+2025-04-20 09:30:25,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-01 20:15:35,Airbnb,-150.0,Weekend Getaway,The Hague,entertainment,Main Checking
+2025-05-05 11:12:01,H&M,-55.75,Fashion,Amsterdam,personal,Main Checking
+2025-05-12 17:30:00,Kruidvat,-25.5,Health Products,Groningen,health,Main Checking
+2025-06-01 13:45:00,De Bijenkorf,-120.0,Luxury Purchase,Amsterdam,personal,Main Checking
+2025-06-15 10:00:00,Bol.com,-30.99,Books,Eindhoven,others,Main Checking
+2025-06-25 19:30:00,Dinner,-75.0,Dining Out,Amsterdam,food,Main Checking
+2025-04-05 14:23:45,Zara,-89.99,Clothing purchase,Amsterdam,personal,Sofia's Spending
+2025-04-12 18:45:30,Starbucks,-4.75,Coffee run,Rotterdam,food,Sofia's Spending
+2025-04-20 20:15:00,Airbnb,-250.0,Weekend getaway,Utrecht,entertainment,Sofia's Spending
+2025-05-02 10:05:20,Albert Heijn,-45.3,Grocery shopping,The Hague,groceries,Sofia's Spending
+2025-05-15 16:05:10,Spotify,-9.99,Monthly subscription,Amsterdam,subscriptions,Sofia's Spending
+2025-05-22 11:30:00,H&M,-67.5,Fashion spree,Eindhoven,personal,Sofia's Spending
+2025-06-01 13:00:00,KFC,-15.5,Fast food,Amsterdam,food,Sofia's Spending
+2025-06-10 19:30:00,Cinema,-12.0,Movie night,Utrecht,entertainment,Sofia's Spending
+2025-06-15 09:00:00,Vitamins Shop,-25.5,Health supplements,Rotterdam,health,Sofia's Spending
+2025-06-28 21:00:00,Travel Agency,-500.0,Summer vacation,Amsterdam,others,Sofia's Spending
+2025-04-02 14:35:12,Zara,-125.5,New clothes,Amsterdam,personal,Spontaneous Spending
+2025-04-10 18:22:45,Uber Eats,-45.0,Dinner delivery,Rotterdam,food,Spontaneous Spending
+2025-04-15 10:15:30,Spotify,-9.99,Monthly subscription,Utrecht,subscriptions,Spontaneous Spending
+2025-04-20 21:05:00,Theater Amsterdam,-70.0,Concert ticket,Amsterdam,entertainment,Spontaneous Spending
+2025-05-01 12:00:00,IKEA,-200.3,Home decor,Amsterdam,others,Spontaneous Spending
+2025-05-05 09:50:00,Albert Heijn,-60.75,Groceries,Haarlem,groceries,Spontaneous Spending
+2025-05-15 15:30:00,H&M,-90.0,New outfits,The Hague,personal,Spontaneous Spending
+2025-06-02 19:45:00,Bol.com,-32.5,Book purchase,Amsterdam,others,Spontaneous Spending
+2025-06-15 20:00:00,Dinner Club,-100.0,Fine dining,Utrecht,food,Spontaneous Spending
+2025-06-25 16:30:00,Fitbit Store,-150.0,Fitness tracker,Amsterdam,health,Spontaneous Spending
+2025-04-05 14:32:10,Zara,-89.99,New Outfit,Amsterdam,personal,Main Checking
+2025-04-12 19:45:30,Uber Eats,-25.5,Dinner Order,Amsterdam,food,Main Checking
+2025-04-15 10:00:00,Spotify,-9.99,Subscription,Amsterdam,subscriptions,Main Checking
+2025-04-20 17:30:00,A'DAM Tower,-15.0,Sky Bar,Amsterdam,entertainment,Main Checking
+2025-05-01 13:00:00,H&M,-75.0,Fashion Sale,Amsterdam,personal,Main Checking
+2025-05-10 11:15:00,Albert Heijn,-60.25,Groceries,Amsterdam,groceries,Main Checking
+2025-05-15 20:00:00,Cineworld,-12.5,Movie Ticket,Amsterdam,entertainment,Main Checking
+2025-05-22 15:45:00,Bol.com,-29.99,Book Purchase,Amsterdam,others,Main Checking
+2025-06-10 09:30:00,FitForFree,-35.0,Gym Membership,Amsterdam,health,Main Checking
+2025-06-25 18:00:00,Airbnb,-120.0,Weekend Trip,Amsterdam,others,Main Checking
+2025-04-02 14:30:45,Zara,-89.99,New outfit,Amsterdam,clothing,Sofia's Spending
+2025-04-10 18:15:23,Starbucks,-4.5,Coffee break,Rotterdam,food,Sofia's Spending
+2025-04-15 12:00:00,Spotify,-9.99,Monthly subscription,Utrecht,subscriptions,Sofia's Spending
+2025-05-05 20:45:10,Airbnb,-250.0,Weekend getaway,The Hague,entertainment,Sofia's Spending
+2025-05-12 19:30:00,Albert Heijn,-35.75,Groceries,Amsterdam,groceries,Sofia's Spending
+2025-05-20 16:00:00,Cinema,-15.0,Movie night,Eindhoven,entertainment,Sofia's Spending
+2025-06-01 10:00:00,H&M,-49.99,Fashion haul,Amsterdam,clothing,Sofia's Spending
+2025-06-10 13:15:00,Uber,-20.0,Ride home,Amsterdam,transport,Sofia's Spending
+2025-06-20 09:45:00,Fitness Club,-35.0,Monthly fee,Amsterdam,health,Sofia's Spending
+2025-06-28 21:00:00,Dinner,-75.0,Dinner out,Leiden,food,Sofia's Spending
+2025-04-02 14:15:30,Zara,-89.99,New clothes,Amsterdam,personal,Sofia's Main
+2025-04-05 18:45:00,Starbucks,-4.5,Coffee break,Utrecht,food,Sofia's Main
+2025-04-10 20:30:00,Cinema,-12.0,Movie night,Rotterdam,entertainment,Sofia's Main
+2025-04-15 12:00:00,ASOS,-45.75,Online shopping,Amsterdam,personal,Sofia's Main
+2025-05-01 09:00:00,Ahold,-35.25,Groceries,Den Haag,groceries,Sofia's Main
+2025-05-05 19:15:45,Uber,-23.0,Ride home,Amsterdam,others,Sofia's Main
+2025-05-10 16:30:00,Spotify,-9.99,Monthly subscription,Amsterdam,subscriptions,Sofia's Main
+2025-06-01 10:00:00,Nike,-120.0,New sneakers,Amsterdam,personal,Sofia's Main
+2025-06-10 17:45:00,Bol.com,-55.0,Books purchase,Utrecht,others,Sofia's Main
+2025-06-30 13:00:00,Local Bistro,-40.0,Dinner out,Amsterdam,food,Sofia's Main
+2025-04-02 14:23:45,Zara,-89.99,New outfit,Amsterdam,clothing,Sofia's Spending
+2025-04-05 17:45:00,Uber Eats,-34.5,Dinner order,Rotterdam,food,Sofia's Spending
+2025-04-10 09:15:30,Spotify,-9.99,Monthly subscription,Utrecht,subscriptions,Sofia's Spending
+2025-04-12 12:00:00,Amsterdam Coffee,-5.75,Coffee fix,Amsterdam,food,Sofia's Spending
+2025-04-20 18:30:00,Cinema City,-15.0,Movie night,The Hague,entertainment,Sofia's Spending
+2025-05-01 11:00:00,H&M,-65.0,Spring wardrobe,Amsterdam,clothing,Sofia's Spending
+2025-05-10 19:00:00,Dinner at La Rive,-120.5,Fancy dinner,Amsterdam,food,Sofia's Spending
+2025-05-15 15:30:00,Nike Store,-150.0,New trainers,Amsterdam,clothing,Sofia's Spending
+2025-06-01 13:00:00,Health Spa,-75.0,Spa day,Amsterdam,health,Sofia's Spending
+2025-06-15 20:00:00,Concert Tickets,-90.0,Live concert,Amsterdam,entertainment,Sofia's Spending
+2025-04-02 14:23:45,Zara,-89.99,Clothing,Amsterdam,personal,Spontaneous Spending
+2025-04-10 19:45:12,Café de Jaren,-15.5,Coffee Date,Amsterdam,food,Spontaneous Spending
+2025-04-15 12:00:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Spontaneous Spending
+2025-04-20 11:30:05,Pathé,-12.5,Movie Ticket,Amsterdam,entertainment,Spontaneous Spending
+2025-05-01 16:15:40,Albert Heijn,-35.75,Groceries,Amsterdam,groceries,Spontaneous Spending
+2025-05-08 20:05:15,Airbnb,-250.0,Weekend Getaway,Utrecht,others,Spontaneous Spending
+2025-05-15 09:00:00,H&M,-45.0,Fashion Haul,Amsterdam,personal,Spontaneous Spending
+2025-06-01 18:25:30,Just Eat,-25.0,Dinner Order,Amsterdam,food,Spontaneous Spending
+2025-06-15 11:55:01,Fitness Club,-29.99,Gym Membership,Amsterdam,health,Spontaneous Spending
+2025-06-30 21:00:00,ASOS,-75.0,Online Shopping,Amsterdam,personal,Spontaneous Spending
+2025-04-02 14:23:45,Zara,-89.99,New Outfit,Amsterdam,others,Sofia's Spending
+2025-04-10 18:15:30,Starbucks,-4.75,Coffee Run,Rotterdam,food,Sofia's Spending
+2025-04-15 20:45:12,Netflix,-12.99,Subscription,Utrecht,subscriptions,Sofia's Spending
+2025-04-22 13:30:00,AH,-45.5,Groceries,The Hague,groceries,Sofia's Spending
+2025-05-01 19:00:00,Bioscoop,-15.0,Movie Night,Amsterdam,entertainment,Sofia's Spending
+2025-05-10 12:00:00,H&M,-59.99,Clothes Shopping,Eindhoven,others,Sofia's Spending
+2025-05-15 08:30:00,Gym Membership,-29.99,Fitness,Amsterdam,health,Sofia's Spending
+2025-05-20 16:45:00,El Cid,-35.0,Dinner,Amsterdam,food,Sofia's Spending
+2025-06-05 11:00:00,IKEA,-120.0,Home Decor,Amsterdam,others,Sofia's Spending
+2025-06-15 21:30:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Sofia's Spending
+2025-04-02 14:23:55,Zara,-89.99,Clothing haul,Amsterdam,personal,Sofia's Main
+2025-04-05 18:45:10,Starbucks,-4.75,Coffee break,Utrecht,food,Sofia's Main
+2025-04-10 12:30:00,Bol.com,-35.5,Book purchase,Rotterdam,others,Sofia's Main
+2025-04-15 19:10:25,Airbnb,-250.0,Weekend getaway,Amsterdam,entertainment,Sofia's Travel
+2025-04-20 13:00:00,Uber,-22.5,Night out,The Hague,transport,Sofia's Main
+2025-05-01 09:00:00,Spotify,-9.99,Monthly subscription,Amsterdam,subscriptions,Sofia's Main
+2025-05-10 17:45:00,H&M,-45.0,Fashion spree,Amsterdam,personal,Sofia's Main
+2025-05-15 20:30:00,KFC,-15.5,Dinner treat,Eindhoven,food,Sofia's Main
+2025-06-01 10:00:00,Cinema,-12.0,Movie night,Amsterdam,entertainment,Sofia's Main
+2025-06-15 08:00:00,Grocery Store,-60.0,Weekly groceries,Amsterdam,groceries,Sofia's Main

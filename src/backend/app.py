@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 import json
+import csv
+import pandas as pd
+from datetime import datetime
 from openai import OpenAI
 
 app = Flask(__name__)
@@ -62,6 +65,83 @@ PERSONAS = {
     }
 }
 
+# Character to filename mapping
+CHARACTER_FILES = {
+    "Maestro Moolah": "Maestro_Moolah.csv",
+    "Flashy Fin": "Flashy_Fin.csv",
+    "Penny the Penguin": "Penny_the_Penguin.csv",
+    "Bullish Benny": "Bullish_Benny.csv",
+    "Bargain Buzzy": "Bargain_Buzzy.csv",
+    "Zen Zeke": "Zen_Zeke.csv",
+    "Charity Charlie": "Charity_Charlie.csv",
+    "Explorer Ellie": "Explorer_Ellie.csv"
+}
+
+# Function to load transaction data for a character
+def load_transactions(character):
+    filename = CHARACTER_FILES.get(character)
+    if not filename:
+        return []
+    
+    try:
+        file_path = os.path.join(os.path.dirname(__file__), 'data', filename)
+        transactions = []
+        
+        with open(file_path, 'r', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                transactions.append({
+                    'timestamp': row.get('Timestamp', ''),
+                    'merchant': row.get('Merchant', ''),
+                    'amount': float(row.get('Amount', 0)),
+                    'description': row.get('Description', ''),
+                    'location': row.get('Location', ''),
+                    'category': row.get('Category', ''),
+                    'account': row.get('Account', '')
+                })
+        
+        return transactions
+    except Exception as e:
+        print(f"Error loading transactions: {e}")
+        return []
+
+# Function to analyze transactions for insights
+def analyze_transactions(transactions):
+    if not transactions:
+        return {}
+    
+    # Convert to DataFrame for easier analysis
+    df = pd.DataFrame(transactions)
+    
+    # Basic stats
+    try:
+        total_spent = float(df[df['amount'] < 0]['amount'].sum()) * -1
+        total_income = float(df[df['amount'] > 0]['amount'].sum())
+        
+        # Category breakdown
+        category_spend = df[df['amount'] < 0].groupby('category')['amount'].sum() * -1
+        category_percentage = (category_spend / total_spent * 100).to_dict()
+        
+        # Top merchants
+        merchant_spend = df[df['amount'] < 0].groupby('merchant')['amount'].sum() * -1
+        top_merchants = merchant_spend.sort_values(ascending=False).head(5).to_dict()
+        
+        # Monthly spending trend
+        df['month'] = pd.to_datetime(df['timestamp']).dt.strftime('%Y-%m')
+        monthly_spend = df[df['amount'] < 0].groupby('month')['amount'].sum() * -1
+        monthly_trend = monthly_spend.to_dict()
+        
+        return {
+            'total_spent': round(total_spent, 2),
+            'total_income': round(total_income, 2),
+            'category_percentage': {k: round(v, 2) for k, v in category_percentage.items()},
+            'top_merchants': {k: round(v, 2) for k, v in top_merchants.items()},
+            'monthly_trend': {k: round(v, 2) for k, v in monthly_trend.items()}
+        }
+    except Exception as e:
+        print(f"Error analyzing transactions: {e}")
+        return {}
+
 @app.route('/api/chat', methods=['POST'])
 def chat():
     try:
@@ -70,8 +150,27 @@ def chat():
         character = data.get('character', 'Explorer Ellie')
         persona_type = data.get('persona', 'Financial Adventurer')
         
-        # Get persona details for character
+        # Get persona details
         persona = PERSONAS.get(persona_type, PERSONAS["Financial Adventurer"])
+        
+        # Load all transactions
+        transactions = load_transactions(character)
+        transaction_data = ""
+        
+        # Format ALL transactions for context
+        if transactions:
+            transaction_data = "FULL TRANSACTION HISTORY:\n"
+            for txn in transactions:
+                transaction_data += f"{txn['timestamp']} | {txn['merchant']} | €{txn['amount']:.2f} | {txn['category']} | {txn['description']} | {txn['location']}\n"
+            
+            # Add insights at the end
+            insights = analyze_transactions(transactions)
+            if insights:
+                transaction_data += f"\nSUMMARY INSIGHTS:\n"
+                transaction_data += f"Total spent: €{insights['total_spent']:.2f}\n"
+                transaction_data += f"Total income: €{insights['total_income']:.2f}\n"
+                transaction_data += f"Category breakdown: {json.dumps(insights['category_percentage'])}\n"
+                transaction_data += f"Top merchants: {json.dumps(insights['top_merchants'])}\n"
         
         # Format context for the API
         system_prompt = f"""
@@ -80,37 +179,29 @@ def chat():
         Character traits: {persona['traits']}
         Communication style: {persona['style']}
         
-        Your responses should embody this character's personality, using their unique communication style
-        and perspectives about money. Keep responses concise (under 150 words) and engaging.
+        You have access to the user's complete transaction history:
         
-        Important: All financial advice should be responsible and reasonable, even when presented in a playful way.
+        {transaction_data}
         
-        Add occasional character actions in *asterisks* to make the conversation more engaging. For example:
-        *adjusts bow tie* or *flips excitedly*.
+        When answering questions about transactions, refer to this actual data with specific amounts,
+        dates, merchants, and categories. Calculate figures if needed to answer queries accurately.
+        
+        Your responses should embody this character's personality and communication style.
+        Keep responses concise (under 150 words) and engaging.
+        
+        Add occasional character actions in *asterisks* for personality.
         """
         
-        try:
-            # Call OpenAI API for response using the new format
-            response = client.chat.completions.create(
-                model="gpt-4o-mini",  # Using gpt-4 instead of gpt-4.1 as per docs
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_message}
-                ]
-            )
-            
-            # Extract the response content from the completion
-            bot_response = response.choices[0].message.content
-            
-        except Exception as e:
-            print(f"OpenAI API error: {e}")
-            # Fallback response if API fails
-            if "budget" in user_message.lower():
-                bot_response = f"*adjusts form* As {character}, I'd suggest tracking every expense for a week to see where your money really goes. Start small!"
-            elif "invest" in user_message.lower():
-                bot_response = f"*gets excited* Remember the power of compound interest! Even small, regular investments grow significantly over time."
-            else:
-                bot_response = f"*thinks carefully* That's an interesting financial question! What specific aspect would you like me to help with?"
+        # Call OpenAI API
+        response = client.chat.completions.create(
+            model="o3-mini",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message}
+            ]
+        )
+        
+        bot_response = response.choices[0].message.content
         
         return jsonify({
             "response": bot_response,
@@ -123,7 +214,6 @@ def chat():
             "error": "Failed to process request",
             "message": str(e)
         }), 500
-
 if __name__ == '__main__':
     # Use PORT environment variable if available (for deployment)
     port = int(os.environ.get('PORT', 5000))

@@ -85,7 +85,7 @@ Strict rules:
   - "Amount"     (float, 2 decimals, EUR, signed (+ for money coming in, - for money going out.))     
   - "Description"(≤3 words)                   
   - "Location"   (city)                       
-  - "Category"   (groceries, food, entertainment, rent, health, finance, personal, subscriptions, others)
+  - "Category"   (salary, groceries, food, entertainment, rent, health, finance, personal, subscriptions, others)
   - "Account"    (logical account name)       
 • Reflect this persona’s style:
 

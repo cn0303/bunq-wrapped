@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 14:30:00,Salary,2500.0,Monthly income,Utrecht,salary,Main Savings
+2025-04-05 10:15:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Main Spending
+2025-04-10 18:00:00,Zilveren Kruis,-120.0,Health insurance,Utrecht,health,Main Spending
+2025-04-15 12:00:00,Netflix,-12.99,Monthly subscription,Utrecht,subscriptions,Main Spending
+2025-04-20 09:00:00,H&M,-60.5,Clothing purchase,Utrecht,others,Main Spending
+2025-05-01 14:30:00,Salary,2500.0,Monthly income,Utrecht,salary,Main Savings
+2025-05-10 17:45:00,Bol.com,-35.99,Book purchase,Utrecht,others,Main Spending
+2025-05-15 08:30:00,Utrecht Gym,-40.0,Gym membership,Utrecht,personal,Main Spending
+2025-06-01 14:30:00,Salary,2500.0,Monthly income,Utrecht,salary,Main Savings
+2025-06-10 19:00:00,Cinema,-25.0,Movie night,Utrecht,entertainment,Main Spending
+2025-04-05 10:15:00,Tech Solutions,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-04-12 14:30:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Main Savings
+2025-04-18 19:00:00,Spotify,-9.99,Monthly Subscription,Utrecht,subscriptions,Entertainment Fund
+2025-04-25 11:45:00,H&M,-75.5,Clothing Purchase,Utrecht,personal,Main Savings
+2025-05-02 08:30:00,Health Clinic,-120.0,Check-up,Utrecht,health,Health Savings
+2025-05-10 15:00:00,Restaurant De Pizzabakkers,-65.0,Dinner Out,Utrecht,food,Entertainment Fund
+2025-05-15 09:00:00,Transfer to Savings,-500.0,Savings Deposit,Utrecht,finance,Main Savings
+2025-06-01 12:00:00,Freelance Project,800.0,Side Income,Utrecht,salary,Side Project Fund
+2025-06-10 17:30:00,Bol.com,-32.99,Book Purchase,Utrecht,others,Entertainment Fund
+2025-06-25 13:15:00,Monthly Rent,-1200.0,Rent Payment,Utrecht,rent,Main Savings
+2025-04-02 14:45:00,TechCorp,2500.0,Monthly Salary,Utrecht,salary,Savings Account
+2025-04-05 10:30:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Current Account
+2025-04-10 18:00:00,H&M,-60.0,Clothing,Utrecht,personal,Current Account
+2025-04-15 12:00:00,Utrecht Cinema,-15.5,Movie Ticket,Utrecht,entertainment,Current Account
+2025-04-20 09:00:00,HealthPlus,-30.0,Gym Membership,Utrecht,health,Current Account
+2025-05-01 14:45:00,TechCorp,2500.0,Monthly Salary,Utrecht,salary,Savings Account
+2025-05-05 11:00:00,Bol.com,-120.0,Books Purchase,Utrecht,others,Current Account
+2025-05-15 08:30:00,NS,-25.0,Train Ticket,Utrecht,transport,Current Account
+2025-06-01 14:45:00,TechCorp,2500.0,Monthly Salary,Utrecht,salary,Savings Account
+2025-06-10 17:00:00,Zalando,-90.0,Shoes Purchase,Utrecht,personal,Current Account
+2025-04-02 14:30:00,Salary,2500.0,Monthly Salary,Utrecht,salary,savings_account
+2025-04-05 10:15:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,current_account
+2025-04-10 18:00:00,Zorgverzekeraar,-120.0,Health Insurance,Utrecht,health,current_account
+2025-04-15 12:00:00,Spotify,-9.99,Music Subscription,Utrecht,subscriptions,current_account
+2025-04-20 16:45:00,H&M,-75.5,Clothing Purchase,Utrecht,others,current_account
+2025-05-01 14:30:00,Salary,2500.0,Monthly Salary,Utrecht,salary,savings_account
+2025-05-10 11:00:00,Jumbo,-60.25,Groceries,Utrecht,groceries,current_account
+2025-05-15 09:30:00,Netflix,-11.99,Video Subscription,Utrecht,subscriptions,current_account
+2025-06-01 14:30:00,Salary,2500.0,Monthly Salary,Utrecht,salary,savings_account
+2025-06-20 17:30:00,Fitness Center,-35.0,Gym Membership,Utrecht,health,current_account
+2025-04-02 10:30:00,TechCorp,3000.0,Salary,Utrecht,salary,Main Savings
+2025-04-05 15:45:00,Albert Heijn,-45.9,Groceries,Utrecht,groceries,Main Account
+2025-04-10 12:00:00,Netflix,-12.99,Subscription,Utrecht,subscriptions,Main Account
+2025-04-15 18:00:00,Local Cafe,-8.5,Coffee,Utrecht,entertainment,Main Account
+2025-04-20 09:00:00,Zilveren Kruis,-120.0,Health Insurance,Utrecht,health,Main Account
+2025-05-01 10:30:00,TechCorp,3000.0,Salary,Utrecht,salary,Main Savings
+2025-05-10 14:30:00,Hema,-75.0,Clothing,Utrecht,others,Main Account
+2025-05-15 17:00:00,AMAC,-25.0,Accessories,Utrecht,others,Main Account
+2025-06-01 10:30:00,TechCorp,3000.0,Salary,Utrecht,salary,Main Savings
+2025-06-15 19:30:00,Bol.com,-150.0,Books,Utrecht,others,Main Account
+2025-04-05 10:30:00,Supermarkt A,-45.75,Groceries,Utrecht,groceries,Savings Account
+2025-04-12 15:00:00,Salary April,2500.0,Monthly Salary,Utrecht,salary,Main Account
+2025-04-20 12:45:00,Fitness Club,-35.0,Monthly Fee,Utrecht,subscriptions,Main Account
+2025-05-01 18:00:00,Local Market,-25.5,Fruits,Utrecht,groceries,Savings Account
+2025-05-10 09:15:00,Tech Shop,-150.0,Gadget,Utrecht,others,Main Account
+2025-05-15 14:30:00,Park Visit,-12.0,Entry Fee,Utrecht,entertainment,Main Account
+2025-05-25 11:00:00,Medical Clinic,-75.0,Check-up,Utrecht,health,Savings Account
+2025-06-01 20:00:00,Salary May,2500.0,Monthly Salary,Utrecht,salary,Main Account
+2025-06-10 17:30:00,Car Rental,-200.0,Weekend Trip,Utrecht,others,Main Account
+2025-06-20 13:00:00,Bookstore,-30.0,Books,Utrecht,personal,Savings Account
+2025-04-05 14:30:00,Salary,2500.0,Monthly salary,Utrecht,salary,Lars Savings
+2025-04-12 09:15:00,Albert Heijn,-45.67,Groceries,Utrecht,groceries,Lars Savings
+2025-04-20 18:00:00,Fitness Center,-35.0,Gym membership,Utrecht,subscriptions,Lars Savings
+2025-05-01 12:00:00,Rabobank,150.0,Interest earned,Utrecht,finance,Lars Savings
+2025-05-10 19:30:00,H&M,-75.0,Clothing purchase,Utrecht,others,Lars Savings
+2025-05-15 16:45:00,Dinner Out,-60.5,Dining,Utrecht,food,Lars Savings
+2025-05-22 10:00:00,Zorgverzekeraar,-120.0,Health insurance,Utrecht,health,Lars Savings
+2025-06-01 13:00:00,NS,-15.0,Train ticket,Utrecht,others,Lars Savings
+2025-06-15 11:30:00,Bol.com,-50.0,Book purchase,Utrecht,others,Lars Savings
+2025-06-28 09:00:00,Savings Account Transfer,-200.0,Transfer to savings,Utrecht,finance,Lars Savings
+2025-04-02 10:15:30,Salary,2500.0,Monthly salary,Utrecht,salary,Main Savings
+2025-04-05 14:30:00,ALDI,-45.67,Groceries,Utrecht,groceries,Main Savings
+2025-04-10 18:45:00,Netflix,-11.99,Monthly subscription,Utrecht,subscriptions,Entertainment Fund
+2025-04-15 12:00:00,Health Insurance,-120.0,Monthly premium,Utrecht,health,Main Savings
+2025-04-20 09:00:00,Savings Transfer,-500.0,Monthly savings,Utrecht,finance,Main Savings
+2025-05-01 10:00:00,Salary,2500.0,Monthly salary,Utrecht,salary,Main Savings
+2025-05-03 16:30:00,Hema,-30.5,Household items,Utrecht,others,Main Savings
+2025-05-10 19:00:00,Spotify,-9.99,Monthly subscription,Utrecht,subscriptions,Entertainment Fund
+2025-06-01 10:00:00,Salary,2500.0,Monthly salary,Utrecht,salary,Main Savings
+2025-06-15 08:30:00,Rent,-1200.0,Monthly rent,Utrecht,rent,Main Savings
+2025-04-02 10:15:30,TechCorp,2500.0,Salary,Utrecht,salary,Main Savings
+2025-04-05 14:45:00,Albert Heijn,-45.99,Groceries,Utrecht,groceries,Main Savings
+2025-04-15 19:30:00,Netflix,-12.99,Subscription,Utrecht,subscriptions,Entertainment Fund
+2025-04-20 08:20:00,Zalando,-75.5,Clothing,Utrecht,personal,Main Savings
+2025-05-01 11:00:00,Salary Transfer,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-05-05 13:00:00,HEMA,-30.0,Stationery,Utrecht,others,Main Savings
+2025-05-15 17:15:00,Coolblue,-120.0,Electronics,Utrecht,others,Emergency Fund
+2025-05-20 09:30:00,Health Clinic,-60.0,Checkup,Utrecht,health,Health Savings
+2025-06-01 10:00:00,Salary Transfer,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-06-15 16:30:00,Bol.com,-50.0,Books,Utrecht,others,Emergency Fund
+2025-04-02 14:30:00,Salary Deposit,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-04-05 10:15:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Main Spending
+2025-04-12 18:00:00,Mediamarkt,-120.5,New Headphones,Utrecht,entertainment,Main Spending
+2025-04-20 09:00:00,Health Insurance,-75.0,Monthly Premium,Utrecht,health,Main Spending
+2025-05-01 14:30:00,Salary Deposit,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-05-10 12:00:00,Bol.com,-60.0,Books Purchase,Utrecht,others,Main Spending
+2025-05-15 11:45:00,NS,-25.0,Train Ticket,Utrecht,personal,Main Spending
+2025-05-25 16:30:00,Online Savings,500.0,Savings Transfer,Utrecht,finance,Main Savings
+2025-06-01 14:30:00,Salary Deposit,2500.0,Monthly Salary,Utrecht,salary,Main Savings
+2025-06-15 19:00:00,Kruidvat,-30.0,Health Products,Utrecht,health,Main Spending

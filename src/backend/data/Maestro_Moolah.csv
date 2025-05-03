@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 09:15:30,H&M,-45.99,Clothing purchase,Amsterdam,personal,Maestro Moolah
+2025-04-05 12:30:00,Albert Heijn,-75.5,Groceries,Utrecht,groceries,Maestro Moolah
+2025-04-10 14:00:00,Salary April,3500.0,Monthly salary,Remote,salary,Maestro Moolah
+2025-04-15 19:45:00,Netflix,-11.99,Subscription fee,Online,subscriptions,Maestro Moolah
+2025-05-01 08:30:00,Bol.com,-29.99,Book purchase,Online,others,Maestro Moolah
+2025-05-10 11:20:00,Zalando,-60.0,Shoes purchase,Online,personal,Maestro Moolah
+2025-05-15 17:00:00,DHL,-5.99,Shipping fee,Amsterdam,others,Maestro Moolah
+2025-05-20 13:30:00,Spar,-40.75,Weekly groceries,Rotterdam,groceries,Maestro Moolah
+2025-06-05 15:00:00,Mediamarkt,-150.0,Electronics purchase,The Hague,entertainment,Maestro Moolah
+2025-06-30 09:00:00,Health Insurance,-120.0,Monthly premium,Amsterdam,health,Maestro Moolah
+2025-04-02 14:30:00,Hema,-23.5,Office Supplies,Amsterdam,groceries,Budgeting Account
+2025-04-05 09:15:00,Albert Heijn,-75.2,Weekly Groceries,Utrecht,groceries,Budgeting Account
+2025-04-10 18:45:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Entertainment Fund
+2025-04-15 12:00:00,Salary,3000.0,Monthly Salary,Amsterdam,salary,Income Account
+2025-04-20 16:30:00,Bol.com,-45.75,Books Purchase,Amsterdam,others,Entertainment Fund
+2025-05-01 10:00:00,Zorgverzekering,-120.0,Health Insurance,Amsterdam,health,Health Account
+2025-05-10 08:30:00,Cinema,-15.0,Movie Night,Amsterdam,entertainment,Entertainment Fund
+2025-05-15 14:00:00,Rent,-950.0,Monthly Rent,Amsterdam,rent,Housing Account
+2025-06-01 09:00:00,ING Bank,-5.0,Account Fee,Amsterdam,finance,Budgeting Account
+2025-06-15 11:30:00,Action,-30.0,Household Items,Utrecht,groceries,Budgeting Account
+2025-04-02 09:15:00,Albert Heijn,-45.75,Groceries,Amsterdam,groceries,Main Checking
+2025-04-05 14:30:00,Salary Deposit,3200.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-10 18:45:00,Kruidvat,-23.5,Health Products,Rotterdam,health,Main Checking
+2025-04-15 13:00:00,Netflix,-11.99,Subscription,Utrecht,subscriptions,Main Checking
+2025-04-20 17:00:00,Bol.com,-59.9,Books,The Hague,others,Main Checking
+2025-05-01 08:00:00,Rent Payment,-1200.0,Monthly Rent,Amsterdam,rent,Main Checking
+2025-05-10 12:30:00,HEMA,-35.0,Household Items,Eindhoven,groceries,Main Checking
+2025-05-15 19:00:00,Dinner Out,-75.2,Dining,Amsterdam,food,Main Checking
+2025-05-25 10:00:00,Bonus Payment,500.0,Annual Bonus,Amsterdam,finance,Main Checking
+2025-06-15 15:45:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Main Checking
+2025-04-02 10:15:30,Albert Heijn,-45.75,Groceries,Amsterdam,groceries,Budget Account
+2025-04-05 14:20:00,Coolblue,-199.99,Laptop,Amsterdam,others,Savings Account
+2025-04-10 08:30:00,Rabobank,3000.0,Salary April,Utrecht,salary,Main Account
+2025-04-15 19:45:00,Kruidvat,-12.5,Health Products,Eindhoven,health,Budget Account
+2025-05-01 12:00:00,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Entertainment Account
+2025-05-10 16:30:00,Bol.com,-35.0,Books,Amsterdam,others,Budget Account
+2025-05-15 09:00:00,H&M,-78.5,Clothing,Rotterdam,personal,Main Account
+2025-05-20 20:00:00,Local Bistro,-60.0,Dinner Out,Amsterdam,food,Entertainment Account
+2025-06-01 11:00:00,Vattenfall,-85.0,Electricity Bill,Amsterdam,finance,Main Account
+2025-06-15 15:00:00,Zara,-45.0,New Shoes,Amsterdam,personal,Budget Account
+2025-04-02 14:45:00,Albert Heijn,-45.75,Groceries,Amsterdam,groceries,Main Checking
+2025-04-05 09:30:00,Rabobank,2500.0,Salary,Amsterdam,salary,Main Checking
+2025-04-10 19:15:00,Kinepolis,-25.0,Movie Ticket,Amsterdam,entertainment,Main Checking
+2025-04-12 13:00:00,Zalando,-75.5,Clothing,Amsterdam,personal,Main Checking
+2025-04-15 08:00:00,Hema,-12.3,Stationery,Amsterdam,others,Main Checking
+2025-05-01 10:00:00,Fit for Free,-29.99,Gym Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-10 12:30:00,Mediamarkt,-199.99,Electronics,Amsterdam,others,Main Checking
+2025-05-15 16:00:00,Bol.com,-49.99,Books,Amsterdam,others,Main Checking
+2025-06-01 09:00:00,Kruidvat,-22.5,Health Products,Amsterdam,health,Main Checking
+2025-06-15 10:00:00,Energiedirect,-89.0,Electricity Bill,Amsterdam,finance,Main Checking
+2025-04-02 10:15:30,Albert Heijn,-45.3,Groceries,Amsterdam,groceries,Main Checking
+2025-04-05 14:45:00,Bol.com,-29.99,Book Purchase,Utrecht,entertainment,Main Checking
+2025-04-10 09:00:00,Salary Deposit,3200.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-04-15 18:30:00,Mediamarkt,-150.0,Electronics,Rotterdam,others,Main Checking
+2025-05-01 12:00:00,Zalando,-85.5,Clothing,Amsterdam,personal,Main Checking
+2025-05-10 17:00:00,Kruidvat,-25.75,Health Products,Haarlem,health,Main Checking
+2025-05-15 11:30:00,Rent Payment,-1200.0,Monthly Rent,Amsterdam,rent,Main Checking
+2025-05-20 13:45:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Main Checking
+2025-06-01 10:00:00,Action,-35.0,Household Items,Amsterdam,others,Main Checking
+2025-06-15 08:30:00,Additional Income,500.0,Freelance Work,Amsterdam,finance,Main Checking
+2025-04-02 09:30:00,Albert Heijn,-45.67,Groceries,Amsterdam,groceries,Budget Account
+2025-04-05 15:45:00,H&M,-78.5,Clothing,Rotterdam,personal,Budget Account
+2025-04-10 12:00:00,Rabobank,2500.0,Salary,Utrecht,salary,Salary Account
+2025-04-15 18:30:00,Bol.com,-34.99,Books,Amsterdam,others,Budget Account
+2025-04-20 20:00:00,Thuisbezorgd,-27.5,Dinner,The Hague,food,Budget Account
+2025-05-02 09:00:00,Zilveren Kruis,-120.0,Health Insurance,Amsterdam,health,Budget Account
+2025-05-10 10:15:00,Spotify,-9.99,Subscription,Amsterdam,subscriptions,Budget Account
+2025-05-15 16:00:00,Shell,-60.0,Fuel,Amsterdam,others,Budget Account
+2025-06-01 11:00:00,KPN,-50.0,Internet,Amsterdam,subscriptions,Budget Account
+2025-06-15 14:30:00,Funda,-1200.0,Rent,Amsterdam,rent,Budget Account
+2025-04-03 14:15:27,Albert Heijn,-45.75,Groceries,Amsterdam,groceries,Main Checking
+2025-04-10 09:30:45,H&M,-75.0,Clothing,Utrecht,personal,Main Checking
+2025-04-15 12:00:00,Salary,3200.0,Monthly Salary,Amsterdam,salary,Main Checking
+2025-05-02 17:45:30,Bol.com,-29.99,Books,Amsterdam,others,Main Checking
+2025-05-10 18:20:10,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Main Checking
+2025-05-15 08:00:00,Health Insurance,-120.5,Monthly Premium,Amsterdam,health,Main Checking
+2025-05-20 19:30:00,Cinema,-15.0,Movie Night,Amsterdam,entertainment,Main Checking
+2025-06-05 10:00:00,Rent,-1200.0,Monthly Rent,Amsterdam,rent,Main Checking
+2025-06-15 14:00:00,Transfer to Savings,-500.0,Savings Transfer,Amsterdam,finance,Main Checking
+2025-06-25 16:30:00,Action,-20.0,Household Items,Amsterdam,groceries,Main Checking
+2025-04-02 09:15:00,Salaris BV,2500.0,Maand salaris,Amsterdam,salary,Hoofdrekening
+2025-04-05 14:30:00,Albert Heijn,-75.45,Boodschappen,Utrecht,groceries,Hoofdrekening
+2025-04-10 18:00:00,Kruidvat,-22.6,Persoonlijke verzorging,Rotterdam,personal,Hoofdrekening
+2025-04-15 12:00:00,H&M,-50.0,Kleding aankoop,Den Haag,others,Hoofdrekening
+2025-04-20 19:45:00,Pathé,-30.0,Filmavond,Eindhoven,entertainment,Hoofdrekening
+2025-05-01 08:00:00,Zorgverzekering,-120.0,Zorgpremie,Amsterdam,health,Hoofdrekening
+2025-05-10 16:30:00,DHL,-15.0,Verzendkosten,Utrecht,others,Hoofdrekening
+2025-05-15 11:00:00,ING Bank,-200.0,Huis huur,Rotterdam,rent,Hoofdrekening
+2025-06-01 09:00:00,Salaris BV,2500.0,Maand salaris,Amsterdam,salary,Hoofdrekening
+2025-06-25 20:00:00,Thuisbezorgd,-45.0,Avond eten,Eindhoven,food,Hoofdrekening
+2025-04-02 12:30:00,Salary Inc.,3000.0,Monthly Salary,Amsterdam,salary,Main Account
+2025-04-05 14:15:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Main Account
+2025-04-10 18:00:00,Kinepolis,-15.0,Movie Ticket,Rotterdam,entertainment,Main Account
+2025-04-12 09:00:00,Zorgverzekeraar,-120.0,Health Insurance,Amsterdam,health,Main Account
+2025-04-20 16:45:00,H&M,-75.5,Clothing,The Hague,personal,Main Account
+2025-05-01 12:00:00,Rent Co.,-1200.0,Monthly Rent,Amsterdam,rent,Main Account
+2025-05-15 11:30:00,ABN AMRO,-5.99,Bank Fee,Amsterdam,finance,Main Account
+2025-05-22 13:00:00,Spotify,-9.99,Subscription Fee,Amsterdam,subscriptions,Main Account
+2025-06-05 15:00:00,Bol.com,-30.0,Books Purchase,Amsterdam,others,Main Account
+2025-06-30 08:00:00,Salary Inc.,3000.0,Monthly Salary,Amsterdam,salary,Main Account

@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 10:15:30,Local Charity,-50.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-04-05 14:45:00,Grocery Store,-75.3,Groceries,Rotterdam,groceries,Isabella's Main Account
+2025-04-10 18:00:00,Friends Help,-100.0,Support,Rotterdam,personal,Isabella's Main Account
+2025-04-15 12:30:00,Health Clinic,-150.0,Checkup,Rotterdam,health,Isabella's Main Account
+2025-05-01 09:00:00,Local Art Fund,-200.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-05-10 19:45:15,Restaurant Supplies,-300.5,Supplies,Rotterdam,groceries,Isabella's Business Account
+2025-05-20 08:30:00,Culinary School,-250.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-06-01 11:15:00,Monthly Rent,-1200.0,Rent,Rotterdam,rent,Isabella's Main Account
+2025-06-15 16:00:00,Friends Dinner,-90.0,Dinner,Rotterdam,food,Isabella's Main Account
+2025-06-25 20:00:00,Community Project,-150.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-04-02 14:30:00,Charity A,-50.0,Donation,Rotterdam,others,Isabella's Business Account
+2025-04-10 16:45:00,Local Food Bank,-100.0,Food Donation,Rotterdam,others,Isabella's Personal Account
+2025-04-15 12:00:00,Friend's Birthday,-75.0,Gift,Rotterdam,personal,Isabella's Personal Account
+2025-04-20 09:15:00,Community Center,-200.0,Event Sponsorship,Rotterdam,others,Isabella's Business Account
+2025-05-01 11:00:00,Charity B,-150.0,Donation,Rotterdam,others,Isabella's Personal Account
+2025-05-10 17:30:00,Restaurant Supplies,-300.0,Groceries,Rotterdam,groceries,Isabella's Business Account
+2025-05-20 13:00:00,Health Clinic,-120.0,Health Check,Rotterdam,health,Isabella's Personal Account
+2025-06-05 10:00:00,Local Charity,-250.0,Fundraiser,Rotterdam,others,Isabella's Business Account
+2025-06-15 19:00:00,Friend's Wedding,-100.0,Gift,Rotterdam,personal,Isabella's Personal Account
+2025-06-25 14:00:00,Charity C,-75.0,Donation,Rotterdam,others,Isabella's Personal Account
+2025-04-03 14:15:27,Charity Water,-50.0,Donation,Rotterdam,others,Isabella's Business
+2025-04-10 09:45:12,Grocery Store,-35.75,Groceries,Rotterdam,groceries,Isabella's Business
+2025-04-15 11:30:45,Friends' Fund,-100.0,Help,Rotterdam,personal,Isabella's Personal
+2025-04-20 18:00:00,Local Shelter,-75.0,Fundraiser,Rotterdam,others,Isabella's Business
+2025-05-01 12:00:00,Restaurant Income,1200.0,Salary,Rotterdam,salary,Isabella's Business
+2025-05-05 16:20:30,Food Bank,-200.0,Donation,Rotterdam,others,Isabella's Personal
+2025-05-12 10:15:00,Entertainment Co.,-60.0,Event Tickets,Rotterdam,entertainment,Isabella's Personal
+2025-05-20 14:00:00,Local Orphanage,-150.0,Donation,Rotterdam,others,Isabella's Business
+2025-06-01 08:30:00,Charity Event,-100.0,Sponsorship,Rotterdam,others,Isabella's Personal
+2025-06-15 19:00:00,Health Insurance,-120.0,Monthly Premium,Rotterdam,health,Isabella's Personal
+2025-04-05 14:30:00,Charity Foundation,-150.0,Donation,Rotterdam,others,Isabella's Main
+2025-04-12 11:15:00,Local Food Bank,-200.0,Food Donation,Rotterdam,others,Isabella's Main
+2025-04-20 09:45:00,Friend's Birthday,-50.0,Gift,Rotterdam,personal,Isabella's Main
+2025-04-28 18:00:00,Community Center,-75.0,Event Sponsorship,Rotterdam,others,Isabella's Main
+2025-05-10 13:00:00,Animal Shelter,-100.0,Donation,Rotterdam,others,Isabella's Main
+2025-05-15 20:00:00,Restaurant Supplies,-300.0,Purchase,Rotterdam,groceries,Isabella's Main
+2025-05-22 10:30:00,Local School,-120.0,Cooking Class Donation,Rotterdam,others,Isabella's Main
+2025-06-01 17:00:00,Fundraiser Dinner,-250.0,Ticket Purchase,Rotterdam,entertainment,Isabella's Main
+2025-06-15 12:00:00,Health Clinic,-80.0,Check-up,Rotterdam,health,Isabella's Main
+2025-06-28 14:00:00,Local Charity Run,-60.0,Entry Fee,Rotterdam,others,Isabella's Main
+2025-04-02 14:30:00,Red Cross,-50.0,Donation,Rotterdam,others,Isabella's Main
+2025-04-05 11:15:00,Local Food Bank,-75.0,Food Donation,Rotterdam,others,Isabella's Main
+2025-04-10 09:45:00,Friends Dinner,-120.0,Dinner Out,Rotterdam,food,Isabella's Main
+2025-04-12 16:00:00,Charity Run,-30.0,Entry Fee,Rotterdam,others,Isabella's Main
+2025-04-20 18:00:00,Rotterdam Soup Kitchen,-100.0,Donation,Rotterdam,others,Isabella's Main
+2025-05-01 12:00:00,Restaurant Salary,3000.0,Monthly Salary,Rotterdam,salary,Isabella's Main
+2025-05-15 17:30:00,Local Theater,-60.0,Ticket Purchase,Rotterdam,entertainment,Isabella's Main
+2025-05-22 13:00:00,Friends Help,-200.0,Loan to Friend,Rotterdam,personal,Isabella's Main
+2025-06-05 19:00:00,Health Clinic,-150.0,Medical Checkup,Rotterdam,health,Isabella's Main
+2025-06-28 10:00:00,Monthly Subscriptions,-15.0,Streaming Service,Rotterdam,subscriptions,Isabella's Main
+2025-04-02 14:23:45,Charity Fund,-50.0,Donation,Rotterdam,personal,Isabella's Main Account
+2025-04-05 11:15:30,Local Food Bank,-100.0,Donation,Rotterdam,personal,Isabella's Main Account
+2025-04-10 17:45:12,Friends,-30.0,Help,Rotterdam,personal,Isabella's Main Account
+2025-04-15 09:30:00,Rotterdam Charity Gala,-200.0,Ticket,Rotterdam,entertainment,Isabella's Main Account
+2025-04-20 12:00:00,Local Hospital,-150.0,Donation,Rotterdam,health,Isabella's Main Account
+2025-05-01 13:00:00,Cooking Class,-75.0,Gift,Rotterdam,others,Isabella's Main Account
+2025-05-12 16:45:00,Local Shelter,-80.0,Donation,Rotterdam,personal,Isabella's Main Account
+2025-05-20 10:30:00,Culinary School,-50.0,Support,Rotterdam,others,Isabella's Main Account
+2025-06-01 15:00:00,Charity Run,-100.0,Entry Fee,Rotterdam,entertainment,Isabella's Main Account
+2025-06-15 14:00:00,Food Relief,-120.0,Donation,Rotterdam,personal,Isabella's Main Account
+2025-04-05 14:32:00,Food Bank Rotterdam,-50.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-04-15 11:15:00,Friends' Dinner,-75.0,Dinner,Rotterdam,food,Isabella's Main Account
+2025-04-20 09:00:00,Local Animal Shelter,-30.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-05-02 12:45:00,Charity Run,-100.0,Sponsorship,Rotterdam,charity,Isabella's Main Account
+2025-05-10 19:30:00,Rotterdam Soup Kitchen,-40.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-05-15 17:00:00,Monthly Salary,3000.0,Salary,Rotterdam,salary,Isabella's Main Account
+2025-05-22 10:00:00,Local Orphanage,-70.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-06-01 20:00:00,Friends' Fundraiser,-60.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-06-10 09:30:00,Healthcare Donation,-150.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-06-25 18:00:00,Local School,-200.0,Donation,Rotterdam,charity,Isabella's Main Account
+2025-04-05 14:30:00,Red Cross,-50.0,Charity donation,Rotterdam,others,Isabella's Main Account
+2025-04-10 09:15:00,Local Food Bank,-75.0,Food donation,Rotterdam,others,Isabella's Main Account
+2025-04-15 11:00:00,Friends' Birthday,-30.0,Gift,Rotterdam,personal,Isabella's Main Account
+2025-04-20 18:45:00,Charity Gala,-100.0,Gala ticket,Rotterdam,entertainment,Isabella's Main Account
+2025-04-25 12:00:00,Animal Shelter,-40.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-05-01 10:30:00,Salary,2500.0,Monthly salary,Rotterdam,salary,Isabella's Main Account
+2025-05-10 16:00:00,Children's Hospital,-200.0,Donation,Rotterdam,others,Isabella's Main Account
+2025-05-15 14:15:00,Local Theater,-60.0,Show tickets,Rotterdam,entertainment,Isabella's Main Account
+2025-06-01 09:00:00,Charity Run,-150.0,Sponsorship,Rotterdam,others,Isabella's Main Account
+2025-06-15 12:30:00,Community Center,-100.0,Event support,Rotterdam,others,Isabella's Main Account
+2025-04-02 14:30:00,Food Bank Rotterdam,-50.0,Food donation,Rotterdam,charity,Restaurant Donations
+2025-04-10 09:15:00,Local Animal Shelter,-75.0,Animal support,Rotterdam,charity,Community Support
+2025-04-15 19:45:00,Friends' Birthday Gift,-100.0,Gift for friend,Rotterdam,personal,Friends & Family
+2025-04-20 11:00:00,Rotterdam Arts Fund,-200.0,Art donation,Rotterdam,charity,Cultural Contributions
+2025-05-05 16:20:00,Local School,-150.0,School supplies,Rotterdam,charity,Educational Support
+2025-05-12 12:30:00,Charity Run Event,-25.0,Event entry,Rotterdam,entertainment,Community Events
+2025-05-21 08:10:00,Local Homeless Shelter,-100.0,Shelter donation,Rotterdam,charity,Welfare Support
+2025-06-01 17:00:00,Local Disaster Relief Fund,-300.0,Emergency funds,Rotterdam,charity,Crisis Support
+2025-06-15 13:45:00,Rotterdam Children's Hospital,-200.0,Hospital donation,Rotterdam,charity,Health Contributions
+2025-06-28 11:30:00,Green Initiatives,-150.0,Environmental support,Rotterdam,charity,Sustainability Efforts
+2025-04-02 14:45:00,Stichting Dierenlot,-50.0,Animal Donation,Rotterdam,others,Charity Fund
+2025-04-10 11:30:00,Bakkerij De Korenaar,-15.75,Bread purchase,Rotterdam,groceries,Personal Account
+2025-04-15 19:00:00,Rode Kruis,-100.0,Emergency Relief,Rotterdam,others,Charity Fund
+2025-04-20 12:00:00,Local Food Bank,-75.0,Food Donation,Rotterdam,others,Charity Fund
+2025-05-05 18:15:00,Restaurant Supplies Co.,-200.0,Kitchen Supplies,Rotterdam,groceries,Business Account
+2025-05-12 09:30:00,Stichting Lezen en Schrijven,-30.0,Literacy Donation,Rotterdam,others,Charity Fund
+2025-05-20 16:00:00,Cinema Rotterdam,-25.0,Movie Night,Rotterdam,entertainment,Personal Account
+2025-05-25 11:00:00,KWF Kankerbestrijding,-100.0,Cancer Research,Rotterdam,others,Charity Fund
+2025-06-10 14:00:00,Huisarts Rotterdam,-40.0,Doctor Visit,Rotterdam,health,Personal Account
+2025-06-25 17:30:00,Food for Friends,-60.0,Community Meal,Rotterdam,food,Personal Account

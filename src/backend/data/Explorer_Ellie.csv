@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 14:30:00,Tech Innovators,2500.0,Monthly Salary,Amsterdam,salary,Main Business Account
+2025-04-05 10:15:00,Grocery Mart,-45.75,Weekly Groceries,Utrecht,groceries,Personal Account
+2025-04-10 19:00:00,Dinner Delight,-60.25,Dinner Out,Rotterdam,food,Personal Account
+2025-04-15 22:00:00,Cinema Lux,-15.0,Movie Night,The Hague,entertainment,Personal Account
+2025-04-20 11:00:00,Health & Wellness,-120.0,Gym Membership,Eindhoven,health,Personal Account
+2025-05-01 14:30:00,Client Payment,750.0,Project Payment,Amsterdam,finance,Main Business Account
+2025-05-10 09:00:00,Online Subscription,-12.99,Streaming Service,Nijmegen,subscriptions,Personal Account
+2025-05-15 17:45:00,Local Market,-30.0,Fresh Produce,Groningen,groceries,Personal Account
+2025-06-01 18:30:00,Monthly Rent,-1200.0,Apartment Rent,Amsterdam,rent,Main Business Account
+2025-06-15 13:00:00,Travel Agency,-500.0,Vacation Booking,Amsterdam,others,Personal Account
+2025-04-02 14:15:30,Freelance Work,1200.0,Project Payment,Amsterdam,finance,Business Account
+2025-04-10 09:45:00,Albert Heijn,-45.75,Grocery Shopping,Utrecht,groceries,Personal Account
+2025-04-15 18:00:00,Netflix,-11.99,Monthly Subscription,Online,subscriptions,Personal Account
+2025-04-20 20:30:00,Bioscoop,-25.0,Movie Night,Rotterdam,entertainment,Personal Account
+2025-05-05 12:00:00,Health Insurance,-150.0,Monthly Premium,Online,health,Personal Account
+2025-05-12 11:30:00,Rent Payment,-850.0,Monthly Rent,Amsterdam,rent,Personal Account
+2025-05-18 17:00:00,Tech Conference,-250.0,Event Ticket,The Hague,others,Business Account
+2025-05-25 09:00:00,Salary Payment,2500.0,Monthly Salary,Amsterdam,salary,Business Account
+2025-06-05 14:45:00,Bol.com,-75.5,Book Purchase,Online,personal,Personal Account
+2025-06-15 19:30:00,Uber,-30.0,Ride Home,Amsterdam,transport,Personal Account
+2025-04-02 14:45:00,Salary Deposit,2500.0,Monthly salary,Amsterdam,salary,Business Checking
+2025-04-10 09:30:00,Albert Heijn,-45.75,Grocery shopping,Utrecht,groceries,Personal Checking
+2025-04-15 19:00:00,Bol.com,-89.99,Books purchase,Amsterdam,others,Personal Credit
+2025-04-22 11:15:00,Spotify,-9.99,Monthly subscription,Amsterdam,subscriptions,Personal Credit
+2025-05-05 18:20:00,Health Insurance,-120.0,Monthly premium,Amsterdam,health,Business Checking
+2025-05-11 12:00:00,Uber,-15.5,Ride home,Rotterdam,transport,Personal Checking
+2025-05-20 17:30:00,Event Ticket,-45.0,Concert ticket,Amsterdam,entertainment,Personal Credit
+2025-06-01 10:00:00,Freelance Project,1200.0,Project payment,Amsterdam,finance,Business Checking
+2025-06-15 14:30:00,IKEA,-250.5,Furniture shopping,Amsterdam,others,Personal Checking
+2025-06-28 16:45:00,Dinner Out,-75.2,Dinner with friends,The Hague,food,Personal Credit
+2025-04-03 09:15:42,Tech Innovations,-150.0,Software License,Amsterdam,finance,Business Expenses
+2025-04-10 14:30:27,Grocery Mart,-45.75,Weekly Groceries,Utrecht,groceries,Personal Budget
+2025-04-15 12:00:00,Freelance Project,1200.0,Project Payment,Rotterdam,salary,Income
+2025-04-22 19:45:33,Netflix,-12.99,Monthly Subscription,Amsterdam,subscriptions,Entertainment
+2025-05-01 08:05:17,HealthPlus,-75.5,Gym Membership,Eindhoven,health,Personal Budget
+2025-05-13 11:30:05,Local Café,-20.0,Coffee & Snacks,Amsterdam,food,Entertainment
+2025-05-20 16:25:45,Rent Payment,-950.0,Monthly Rent,The Hague,rent,Housing
+2025-06-05 10:00:00,Tech Meetup,200.0,Networking Event,Amsterdam,others,Professional Development
+2025-06-15 13:15:00,Bookstore,-35.5,Business Books,Utrecht,personal,Self-Improvement
+2025-06-28 17:45:22,Food Delivery,-30.0,Dinner Order,Amsterdam,food,Entertainment
+2025-04-05 14:23:45,Salary Inc.,2500.0,Monthly Salary,Amsterdam,salary,Main Business Account
+2025-04-10 09:45:12,Albert Heijn,-45.67,Grocery Shopping,Utrecht,groceries,Main Business Account
+2025-04-15 18:30:00,Netflix,-11.99,Monthly Subscription,Amsterdam,subscriptions,Main Business Account
+2025-04-20 12:00:00,Bol.com,-29.95,Book Purchase,Amsterdam,others,Main Business Account
+2025-05-01 16:15:30,Freelance Work,800.0,Project Payment,Rotterdam,others,Main Business Account
+2025-05-10 13:00:00,Health Insurance,-120.0,Monthly Premium,Amsterdam,health,Main Business Account
+2025-05-15 20:45:00,Cinema City,-15.0,Movie Night,The Hague,entertainment,Main Business Account
+2025-05-25 11:00:00,Rent Payment,-1200.0,Monthly Rent,Amsterdam,rent,Main Business Account
+2025-06-01 14:00:00,Tech Conference,-250.0,Event Ticket,Eindhoven,entertainment,Main Business Account
+2025-06-15 09:30:00,Savings Account,-1000.0,Transfer to Savings,Amsterdam,finance,Main Business Account
+2025-04-02 10:15:45,Tech Innovators,1500.0,April Salary,Amsterdam,salary,Business Account
+2025-04-05 14:30:22,Grocery Haven,-45.6,Weekly Groceries,Utrecht,groceries,Personal Account
+2025-04-10 19:00:10,Café de Innovatie,-12.5,Coffee Break,Rotterdam,food,Personal Account
+2025-04-15 11:45:00,Monthly Subscription,-9.99,App Subscription,Amsterdam,subscriptions,Business Account
+2025-04-20 08:30:30,HealthPlus,-75.0,Gym Membership,The Hague,health,Personal Account
+2025-05-01 09:00:00,Freelance Work,800.0,Project Payment,Amsterdam,others,Business Account
+2025-05-10 17:15:45,Entertainment Hub,-50.0,Movie Night,Eindhoven,entertainment,Personal Account
+2025-05-20 13:00:00,Home Rent,-1200.0,Monthly Rent,Amsterdam,rent,Personal Account
+2025-06-05 15:30:22,Investment Fund,-200.0,Stock Purchase,Amsterdam,finance,Business Account
+2025-06-15 10:00:00,Tech Meetup,-25.0,Event Ticket,Groningen,entertainment,Personal Account
+2025-04-05 14:23:45,Tech Tools Inc.,-49.99,App Subscription,Amsterdam,subscriptions,Main Checking
+2025-04-12 10:15:30,GroceryMart,-75.5,Weekly Groceries,Utrecht,groceries,Main Checking
+2025-04-20 19:00:00,Freelance Project,1500.0,Project Payment,Amsterdam,finance,Business Account
+2025-05-03 12:45:10,Café Delight,-20.75,Lunch Break,Rotterdam,food,Main Checking
+2025-05-15 09:30:25,Rent Payment,-1200.0,Monthly Rent,Amsterdam,rent,Main Checking
+2025-05-22 16:30:00,HealthPlus,-45.0,Gym Membership,The Hague,health,Main Checking
+2025-05-29 11:00:00,Movie Theater,-30.0,Movie Night,Eindhoven,entertainment,Main Checking
+2025-06-07 17:15:00,Online Course,-199.99,Skill Development,Amsterdam,personal,Business Account
+2025-06-14 14:00:00,Gift from Friend,100.0,Birthday Gift,Amsterdam,others,Main Checking
+2025-06-28 13:00:00,Tech Conference,350.0,Event Earnings,Amsterdam,finance,Business Account
+2025-04-02 14:15:30,Tech Innovate,1500.0,Salary April,Amsterdam,salary,Main Account
+2025-04-05 10:22:45,Grocery Mart,-45.75,Weekly groceries,Utrecht,groceries,Main Account
+2025-04-11 18:30:00,Café Central,-12.5,Coffee break,Amsterdam,food,Main Account
+2025-04-15 20:00:00,Streaming Service,-9.99,Monthly subscription,Online,subscriptions,Main Account
+2025-05-01 09:00:00,Health Insurance,-120.0,Monthly premium,Amsterdam,health,Main Account
+2025-05-10 17:45:10,Entertainment Hub,-30.0,Movie night,Rotterdam,entertainment,Main Account
+2025-05-20 14:00:00,Freelance Project,800.0,Project payment,Amsterdam,others,Main Account
+2025-06-01 11:30:00,Rent Payment,-1200.0,Monthly rent,Amsterdam,rent,Main Account
+2025-06-15 12:15:00,Fitness Club,-50.0,Gym membership,Amsterdam,health,Main Account
+2025-06-28 19:00:00,Digital Tools,250.0,Refund received,Online,finance,Main Account
+2025-04-03 14:22:10,Tech Innovations,1500.0,Startup funding,Amsterdam,finance,Business Account
+2025-04-12 09:15:45,Albert Heijn,-45.75,Grocery shopping,Utrecht,groceries,Personal Account
+2025-04-20 18:30:00,Netflix,-11.99,Monthly subscription,Amsterdam,subscriptions,Personal Account
+2025-05-02 11:00:00,H&M,-78.5,Clothing purchase,Rotterdam,personal,Personal Account
+2025-05-15 20:45:30,Uber,-25.0,Ride home,The Hague,transportation,Personal Account
+2025-05-22 16:00:00,Health Clinic,-120.0,Check-up,Amsterdam,health,Personal Account
+2025-05-30 13:30:00,Event Ticket,-60.0,Concert entry,Eindhoven,entertainment,Personal Account
+2025-06-05 10:00:00,Salary,3000.0,Monthly salary,Amsterdam,salary,Business Account
+2025-06-15 17:00:00,Bol.com,-45.99,Book purchase,Amsterdam,others,Personal Account
+2025-06-28 12:00:00,Airbnb,-250.0,Weekend stay,Nijmegen,entertainment,Personal Account
+2025-04-05 10:15:30,Coolblue,-149.99,Tech gadget,Amsterdam,entertainment,Explorer Account
+2025-04-10 13:45:00,Albert Heijn,-45.75,Groceries,Utrecht,groceries,Explorer Account
+2025-04-15 09:00:00,Freelance Project,1200.0,Payment received,Amsterdam,salary,Explorer Account
+2025-04-20 17:30:00,Cinema,-35.0,Movie night,Rotterdam,entertainment,Explorer Account
+2025-05-01 12:00:00,Zalando,-80.99,Clothing,Amsterdam,personal,Explorer Account
+2025-05-10 14:00:00,Fitness Center,-49.99,Monthly fee,The Hague,health,Explorer Account
+2025-05-15 16:30:00,TransferWise,-10.0,Transfer fee,Amsterdam,finance,Explorer Account
+2025-06-01 11:00:00,Spotify,-9.99,Monthly subscription,Amsterdam,subscriptions,Explorer Account
+2025-06-15 19:00:00,Uber,-25.5,Ride home,Amsterdam,others,Explorer Account
+2025-06-25 08:30:00,Airbnb,-300.0,Weekend stay,Amsterdam,others,Explorer Account

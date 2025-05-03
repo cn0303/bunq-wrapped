@@ -1,0 +1,101 @@
+Timestamp,Merchant,Amount,Description,Location,Category,Account
+2025-04-02 14:30:00,Albert Heijn,-45.75,Groceries,Amsterdam,groceries,Main Account
+2025-04-10 09:15:00,Bol.com,-25.99,Books,Utrecht,others,Main Account
+2025-04-15 18:45:00,Kruidvat,-12.5,Health products,Rotterdam,health,Main Account
+2025-04-20 12:00:00,Salary April,2500.0,Monthly salary,Amsterdam,salary,Main Account
+2025-05-01 11:30:00,Action,-15.75,Household items,Den Haag,others,Main Account
+2025-05-10 19:00:00,Filmhuis,-10.0,Movie ticket,Amsterdam,entertainment,Main Account
+2025-05-15 08:00:00,Zalando,-35.5,Clothing,Eindhoven,personal,Main Account
+2025-05-20 14:00:00,Hema,-20.0,Stationery,Amsterdam,others,Main Account
+2025-06-01 16:30:00,Rent June,-800.0,Monthly rent,Amsterdam,rent,Main Account
+2025-06-15 09:00:00,Nespresso,-60.0,Coffee subscription,Amsterdam,subscriptions,Main Account
+2025-04-02 10:15:30,Albert Heijn,-35.5,Groceries,Amsterdam,groceries,Main Checking
+2025-04-05 14:20:45,Bol.com,-12.99,Book purchase,Utrecht,others,Main Checking
+2025-04-10 18:30:00,Café de Jaren,-8.75,Coffee outing,Amsterdam,food,Main Checking
+2025-04-15 09:00:00,Salary,2500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-04-22 17:45:10,Kruidvat,-15.5,Health products,Amsterdam,health,Main Checking
+2025-05-01 12:30:00,Action,-22.3,Home supplies,Amsterdam,groceries,Main Checking
+2025-05-10 20:00:00,Spotify,-9.99,Music subscription,Amsterdam,subscriptions,Main Checking
+2025-05-15 11:15:30,HEMA,-5.0,Stationery,Amsterdam,others,Main Checking
+2025-06-01 14:00:00,Zalando,-49.99,Clothing purchase,Amsterdam,personal,Main Checking
+2025-06-25 16:45:00,Rent,-1200.0,Monthly rent,Amsterdam,rent,Main Checking
+2025-04-03 14:30:00,Albert Heijn,-25.5,Groceries,Amsterdam,groceries,Fatima's Checking
+2025-04-10 09:15:00,HEMA,-15.75,Stationery,Rotterdam,others,Fatima's Checking
+2025-04-12 18:45:00,Coolblue,-120.0,Electronics,Utrecht,entertainment,Fatima's Checking
+2025-04-15 12:00:00,Zalando,-45.99,Clothing,Amsterdam,personal,Fatima's Checking
+2025-04-20 08:00:00,H&M,-30.0,Fashion,The Hague,personal,Fatima's Checking
+2025-05-01 17:30:00,School Salary,2500.0,Monthly Salary,Amsterdam,salary,Fatima's Checking
+2025-05-10 19:00:00,IKEA,-200.0,Furniture,Amsterdam,others,Fatima's Checking
+2025-05-15 22:00:00,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Fatima's Checking
+2025-06-01 13:15:00,Bol.com,-45.0,Books,Amsterdam,others,Fatima's Checking
+2025-06-25 11:00:00,Ahold,-35.4,Groceries,Eindhoven,groceries,Fatima's Checking
+2025-04-02 14:30:00,Albert Heijn,-25.75,Groceries,Amsterdam,groceries,Main Account
+2025-04-05 09:15:00,Bol.com,-15.99,Books,Utrecht,others,Main Account
+2025-04-10 11:00:00,H&M,-45.5,Clothing,Rotterdam,personal,Main Account
+2025-04-12 18:20:00,HEMA,-7.5,Stationery,The Hague,others,Main Account
+2025-05-01 10:00:00,DHL,-5.0,Shipping,Amsterdam,others,Main Account
+2025-05-10 17:45:00,NS,-12.8,Train Ticket,Amsterdam,transport,Main Account
+2025-05-15 09:30:00,Zalando,-60.25,Shoes,Amsterdam,personal,Main Account
+2025-06-01 12:00:00,Salary Deposit,2500.0,Monthly Salary,Amsterdam,salary,Main Account
+2025-06-15 19:00:00,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Main Account
+2025-06-30 08:00:00,Local Market,-20.0,Fresh Veggies,Amsterdam,groceries,Main Account
+2025-04-02 14:22:45,Albert Heijn,-34.5,Groceries,Amsterdam,groceries,Main Account
+2025-04-10 09:15:30,Bol.com,-25.99,Book purchase,Utrecht,others,Main Account
+2025-04-15 12:00:00,Zalando,-50.0,Clothing,Rotterdam,personal,Main Account
+2025-04-20 18:30:00,Hema,-12.75,Stationery,Den Haag,others,Main Account
+2025-04-25 11:45:00,Rent Payment,-800.0,Monthly rent,Amsterdam,rent,Main Account
+2025-05-02 13:00:00,Café de Jaren,-15.8,Lunch out,Amsterdam,food,Main Account
+2025-05-10 09:00:00,Fitness Club,-29.99,Membership fee,Amsterdam,subscriptions,Main Account
+2025-05-15 17:00:00,Mediq,-40.0,Health supplies,Utrecht,health,Main Account
+2025-06-01 10:00:00,Salary,2500.0,Monthly salary,Amsterdam,salary,Main Account
+2025-06-15 16:00:00,Netflix,-11.99,Streaming service,Amsterdam,subscriptions,Main Account
+2025-04-02 14:30:00,Albert Heijn,-25.75,Groceries,Amsterdam,groceries,Fatima's Savings
+2025-04-05 18:15:00,Bol.com,-12.99,Book Purchase,Utrecht,entertainment,Fatima's Spending
+2025-04-10 09:00:00,Salary Deposit,2800.0,Monthly Salary,Amsterdam,salary,Fatima's Savings
+2025-04-15 17:45:00,Hema,-7.5,Stationery,Rotterdam,others,Fatima's Spending
+2025-04-20 20:00:00,Kruidvat,-18.2,Health Products,The Hague,health,Fatima's Spending
+2025-05-02 11:30:00,NS,-15.0,Train Ticket,Amsterdam,personal,Fatima's Spending
+2025-05-10 16:00:00,Café de Jaren,-22.5,Dinner Out,Amsterdam,food,Fatima's Spending
+2025-05-15 12:15:00,Bookstore,-29.99,Textbooks,Groningen,others,Fatima's Spending
+2025-06-01 14:00:00,Zalando,-45.0,Clothing,Amsterdam,personal,Fatima's Spending
+2025-06-15 09:30:00,Spotify,-9.99,Monthly Subscription,Amsterdam,subscriptions,Fatima's Spending
+2025-04-02 14:30:45,Albert Heijn,-34.75,Groceries,Amsterdam,groceries,Fatima's Savings
+2025-04-05 09:15:00,Bol.com,-19.99,Book Purchase,Utrecht,entertainment,Fatima's Spending
+2025-04-10 18:00:00,Hema,-12.5,Stationery,Rotterdam,others,Fatima's Spending
+2025-04-15 08:00:00,Salary,2500.0,Monthly Salary,Amsterdam,salary,Fatima's Savings
+2025-04-20 20:10:00,Kruidvat,-25.0,Health Products,Den Haag,health,Fatima's Spending
+2025-05-01 12:00:00,Cinema City,-15.0,Movie Ticket,Eindhoven,entertainment,Fatima's Spending
+2025-05-10 16:45:00,Zalando,-49.99,Clothing Purchase,Amsterdam,personal,Fatima's Spending
+2025-05-15 10:00:00,Rent,-1200.0,Monthly Rent,Amsterdam,rent,Fatima's Savings
+2025-06-05 09:30:00,AH Online,-28.5,Groceries,Amsterdam,groceries,Fatima's Spending
+2025-06-25 11:15:00,Spotify,-9.99,Monthly Subscription,Amsterdam,subscriptions,Fatima's Spending
+2025-04-02 14:30:00,Albert Heijn,-25.5,Groceries,Amsterdam,groceries,Main Checking
+2025-04-10 18:15:00,Bol.com,-15.99,Book purchase,Utrecht,others,Main Checking
+2025-04-15 12:00:00,H&M,-45.0,Clothes shopping,Rotterdam,personal,Main Checking
+2025-04-20 09:00:00,Salary April,2500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-05-03 19:45:00,KFC,-20.75,Dinner out,The Hague,food,Main Checking
+2025-05-10 10:30:00,Spotify,-9.99,Subscription fee,Amsterdam,subscriptions,Main Checking
+2025-05-15 16:00:00,Mediamarkt,-199.99,Electronics,Eindhoven,others,Main Checking
+2025-05-25 11:00:00,Zalando,-30.0,Shoes purchase,Amsterdam,personal,Main Checking
+2025-06-05 08:00:00,Salary June,2500.0,Monthly salary,Amsterdam,salary,Main Checking
+2025-06-15 20:00:00,Netflix,-12.99,Subscription fee,Amsterdam,subscriptions,Main Checking
+2025-04-02 14:30:00,Albert Heijn,-25.5,Groceries,Amsterdam,groceries,Personal Checking
+2025-04-05 10:15:00,Bol.com,-15.99,Book Purchase,Amsterdam,others,Personal Checking
+2025-04-10 12:00:00,Zalando,-45.0,Clothing Sale,Amsterdam,personal,Personal Checking
+2025-04-15 09:00:00,Hema,-8.75,Stationery,Utrecht,others,Personal Checking
+2025-04-20 18:45:00,AH To Go,-3.5,Snack,Amsterdam,food,Personal Checking
+2025-05-01 09:30:00,Salary,2500.0,Monthly Salary,Amsterdam,salary,Personal Checking
+2025-05-10 17:00:00,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Personal Checking
+2025-05-15 19:30:00,Kruidvat,-12.5,Health Products,Amsterdam,health,Personal Checking
+2025-06-01 14:00:00,Spotify,-9.99,Music Subscription,Amsterdam,subscriptions,Personal Checking
+2025-06-15 16:20:00,HEMA,-20.0,Kitchenware,Rotterdam,others,Personal Checking
+2025-04-02 14:30:45,Albert Heijn,-25.99,Groceries,Amsterdam,groceries,Fatima's Main
+2025-04-05 10:15:00,Bol.com,-45.5,Books,Utrecht,others,Fatima's Main
+2025-04-10 18:00:00,Hema,-12.3,Stationery,Rotterdam,groceries,Fatima's Main
+2025-04-15 08:00:00,Salaris,2500.0,Monthly Salary,Amsterdam,salary,Fatima's Main
+2025-05-01 19:45:30,Café de Jaren,-20.0,Dinner,Amsterdam,food,Fatima's Main
+2025-05-10 11:30:00,Kruidvat,-15.75,Health Products,The Hague,health,Fatima's Main
+2025-05-20 09:00:00,Netflix,-11.99,Subscription,Amsterdam,subscriptions,Fatima's Main
+2025-06-01 16:20:00,Action,-5.99,Household Items,Eindhoven,groceries,Fatima's Main
+2025-06-15 14:00:00,HEMA,-8.5,Snacks,Amsterdam,food,Fatima's Main
+2025-06-30 12:00:00,Bol.com,-30.0,Office Supplies,Utrecht,others,Fatima's Main
