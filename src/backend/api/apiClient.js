@@ -69,17 +69,17 @@ function getDescriptionForPersonality(personality) {
 function getImageForCharacter(character) {
   // Map character names to image file names
   const characterImageMap = {
-    'Maestro Moolah': 'maestro_moolah.png',
-    'Flashy Fin': 'flashy_fin.png',
-    'Penny the Penguin': 'penny_penguin.png',
-    'Bullish Benny': 'bullish_benny.png',
-    'Bargain Buzzy': 'bargain_buzzy.png',
-    'Zen Zeke': 'zen_zeke.png',
-    'Charity Charlie': 'charity_charlie.png',
-    'Explorer Ellie': 'explorer_ellie.png'
+    'Maestro Moolah': 'owl_1.png',
+    'Flashy Fin': 'dolphin_2.png',
+    'Penny the Penguin': 'penguin_3.png',
+    'Bullish Benny': 'bull_4.png',
+    'Bargain Buzzy': 'bee_5.png',
+    'Zen Zeke': 'panda_6.png',
+    'Charity Charlie': 'squirrel_7.png',
+    'Explorer Ellie': 'cat_8.png'
   };
   
-  return characterImageMap[character] || 'explorer_ellie.png';
+  return characterImageMap[character] || 'cat_8.png';
 }
 
 export default apiClient;

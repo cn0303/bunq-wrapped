@@ -4,10 +4,13 @@ import axios from 'axios';
 const API_BASE_URL = 'http://localhost:5001';
 
 const bunqApiClient = {
-  // Get financial summary data
-  getFinancialSummary: async () => {
+  // Get financial summary data with userId support
+  getFinancialSummary: async (userId = null) => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/memories/summary`);
+      const url = userId 
+      ? `${API_BASE_URL}/memories/summary/${userId}` 
+      : `${API_BASE_URL}/memories/summary`;
+      const response = await axios.get(url);
       return response.data;
     } catch (error) {
       console.error('Error fetching financial summary:', error);
@@ -15,14 +18,19 @@ const bunqApiClient = {
     }
   },
 
-  // Get all transactions
-  getTransactions: async () => {
+  // Get all transactions with userId support
+  getTransactions: async (userId = null) => {
+    // If there's a user ID, we can append it as a query parameter
+    const url = userId 
+      ? `${API_BASE_URL}/memories/transactions/${userId}` 
+      : `${API_BASE_URL}/memories/transactions`;
+    
     try {
-      const response = await axios.get(`${API_BASE_URL}/memories/transactions`);
+      const response = await axios.get(url);
       return response.data;
     } catch (error) {
       console.error('Error fetching transactions:', error);
-      throw error;
+      throw error;      
     }
   },
 

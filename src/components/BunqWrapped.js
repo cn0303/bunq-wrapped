@@ -1,22 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFinancialData } from '../backend/FinancialDataContext';
+import LoginScreen from './LoginScreen';
 import LandingScreen from './LandingScreen';
 import PrivacyScreen from './PrivacyScreen';
 import CategoriesScreen from './CategoriesScreen';
 import InsightsScreen from './InsightsScreen';
 
 const BunqWrapped = () => {
-  const [currentScreen, setCurrentScreen] = React.useState('landing');
+  const [currentScreen, setCurrentScreen] = useState('login');
+  const [userId, setUserId] = useState(null);
   const { 
     privacyLevel, 
     selectedCategories, 
     updatePrivacyLevel, 
     updateSelectedCategories,
-    loading
+    loading,
+    loadUserData
   } = useFinancialData();
+  
+  const handleLogin = async (userId) => {
+    // If you have a loadUserData function in your context, call it here
+    if (loadUserData) {
+      await loadUserData(userId);
+    }
+    
+    setUserId(userId);
+    setCurrentScreen('landing');
+  };
   
   const renderScreen = () => {
     switch(currentScreen) {
+      case 'login':
+        return <LoginScreen onLogin={handleLogin} />;
       case 'landing':
         return <LandingScreen setCurrentScreen={setCurrentScreen} />;
       case 'privacySettings':
@@ -35,9 +50,10 @@ const BunqWrapped = () => {
         return <InsightsScreen 
           setCurrentScreen={setCurrentScreen} 
           privacyLevel={privacyLevel}
+          userId={userId}
         />;
       default:
-        return <LandingScreen setCurrentScreen={setCurrentScreen} />;
+        return <LoginScreen onLogin={handleLogin} />;
     }
   };
   

@@ -15,9 +15,10 @@ export const FinancialDataProvider = ({ children }) => {
     shopping: true,
     business: true
   });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [transactions, setTransactions] = useState([]);
+  const [userId, setUserId] = useState(null);
 
   // Load user privacy settings on initial load
   useEffect(() => {
@@ -50,56 +51,54 @@ export const FinancialDataProvider = ({ children }) => {
     loadUserSettings();
   }, []);
 
-  // Load financial data from Bunq API
-  useEffect(() => {
-    const loadFinancialData = async () => {
-      try {
-        setLoading(true);
-        
-        // Get financial summary from Bunq API
-        const summaryData = await bunqApiClient.getFinancialSummary();
-        
-        // Get all transactions for further processing if needed
-        const transactionsData = await bunqApiClient.getTransactions();
-        setTransactions(transactionsData);
-        
-        // Format the data for our app
-        const formattedData = {
-          user: {
-            financialPersonality: summaryData.financialPersonality || 'Financial Adventurer',
-            savingRate: {
-              current: 25,
-              previous: 20
-            }
-          },
-          categories: summaryData.categories || {},
-          topMerchants: summaryData.topMerchants || [],
-          spendingBreakdown: summaryData.spendingBreakdown || {
-            experiences: 45,
-            essentials: 55
-          },
-          weekdaySpending: summaryData.weekdaySpending || {},
-          conversationPoints: summaryData.conversationPoints || [],
-          persona: {
-            type: summaryData.financialPersonality || 'Financial Adventurer',
-            character: getCharacterForPersonality(summaryData.financialPersonality),
-            description: getDescriptionForPersonality(summaryData.financialPersonality),
-            image: getImageForCharacter(getCharacterForPersonality(summaryData.financialPersonality))
+  // Function to load user data based on userId
+  const loadUserData = async (id) => {
+    try {
+      setLoading(true);
+      setUserId(id);
+      
+      // Get financial summary from Bunq API with userId
+      const summaryData = await bunqApiClient.getFinancialSummary(id);
+      
+      // Get all transactions for further processing if needed
+      const transactionsData = await bunqApiClient.getTransactions(id);
+      setTransactions(transactionsData);
+      
+      // Format the data for our app
+      const formattedData = {
+        user: {
+          id: id,
+          financialPersonality: summaryData.financialPersonality || 'Financial Adventurer',
+          savingRate: {
+            current: 25,
+            previous: 20
           }
-        };
-        
-        setFinancialData(formattedData);
-        setError(null);
-      } catch (err) {
-        setError('Failed to load financial data');
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    
-    loadFinancialData();
-  }, [privacyLevel]);
+        },
+        categories: summaryData.categories || {},
+        topMerchants: summaryData.topMerchants || [],
+        spendingBreakdown: summaryData.spendingBreakdown || {
+          experiences: 45,
+          essentials: 55
+        },
+        weekdaySpending: summaryData.weekdaySpending || {},
+        conversationPoints: summaryData.conversationPoints || [],
+        persona: {
+          type: summaryData.financialPersonality || 'Financial Adventurer',
+          character: getCharacterForPersonality(summaryData.financialPersonality),
+          description: getDescriptionForPersonality(summaryData.financialPersonality),
+          image: getImageForCharacter(getCharacterForPersonality(summaryData.financialPersonality))
+        }
+      };
+      
+      setFinancialData(formattedData);
+      setError(null);
+    } catch (err) {
+      setError('Failed to load financial data');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // Helper functions to map personality to character and description
   function getCharacterForPersonality(personality) {
@@ -134,15 +133,15 @@ export const FinancialDataProvider = ({ children }) => {
     // Map character names to image file names
     // This is a placeholder - adjust based on your actual image naming convention
     const characterImageMap = {
-      'Maestro Moolah': 'owl_1.png',
-      'Flashy Fin': 'dolphin_2.png',
-      'Penny the Penguin': 'penguin_3.png',
-      'Bullish Benny': 'bull_4.png',
-      'Bargain Buzzy': 'bee_5.png',
-      'Zen Zeke': 'panda_6.png',
-      'Charity Charlie': 'squirrel_7.png',
-      'Explorer Ellie': 'cat_8.png'
-    };
+        'Maestro Moolah': 'owl_1.png',
+        'Flashy Fin': 'dolphin_2.png',
+        'Penny the Penguin': 'penguin_3.png',
+        'Bullish Benny': 'bull_4.png',
+        'Bargain Buzzy': 'bee_5.png',
+        'Zen Zeke': 'panda_6.png',
+        'Charity Charlie': 'squirrel_7.png',
+        'Explorer Ellie': 'cat_8.png'
+      };
     
     return characterImageMap[character] || 'explorer_ellie.png';
   }
@@ -198,15 +197,17 @@ export const FinancialDataProvider = ({ children }) => {
         
       case 'balanced':
         // Find top category
-        const topCategory = Object.entries(financialData.categories)
-          .sort((a, b) => b[1].percentage - a[1].percentage)[0];
+        const topCategory = Object.entries(financialData.categories).length > 0
+          ? Object.entries(financialData.categories)
+              .sort((a, b) => b[1].percentage - a[1].percentage)[0]
+          : ['travel', { percentage: 28 }];
           
         return {
           ...baseInsights,
           spendingBreakdown: financialData.spendingBreakdown,
           topCategory: {
-            name: topCategory ? topCategory[0] : 'travel',
-            percentage: topCategory ? topCategory[1].percentage : 28
+            name: topCategory[0],
+            percentage: topCategory[1].percentage
           }
         };
         
@@ -234,10 +235,12 @@ export const FinancialDataProvider = ({ children }) => {
     loading,
     error,
     transactions,
+    userId,
     insights: getInsightsForPrivacyLevel(),
     updatePrivacyLevel,
     updateSelectedCategories,
-    shareInsight
+    shareInsight,
+    loadUserData
   };
 
   return (
