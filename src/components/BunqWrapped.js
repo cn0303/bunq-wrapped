@@ -5,6 +5,7 @@ import LandingScreen from './LandingScreen';
 import PrivacyScreen from './PrivacyScreen';
 import CategoriesScreen from './CategoriesScreen';
 import InsightsScreen from './InsightsScreen';
+import BattleArenaScreen from './BattleArenaScreen';
 
 const BunqWrapped = () => {
   const [currentScreen, setCurrentScreen] = useState('login');
@@ -50,6 +51,11 @@ const BunqWrapped = () => {
         return <InsightsScreen 
           setCurrentScreen={setCurrentScreen} 
           privacyLevel={privacyLevel}
+          userId={userId}
+        />;
+      case 'battleArena':
+        return <BattleArenaScreen 
+          setCurrentScreen={setCurrentScreen}
           userId={userId}
         />;
       default:

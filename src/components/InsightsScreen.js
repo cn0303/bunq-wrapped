@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Share2, Award, TrendingUp, Map, Coffee, X, ArrowRight, ArrowLeft, ShoppingBag, Calendar, PieChart, CreditCard, DollarSign, Target, Briefcase, Heart } from 'lucide-react';
+// Find this import line in InsightsScreen.js
+// Replace it with this updated version to include the Sword icon
+
+import { Share2, Award, TrendingUp, Map, Coffee, X, ArrowRight, ArrowLeft, ShoppingBag, Calendar, PieChart, CreditCard, DollarSign, Target, Briefcase, Heart, Sword } from 'lucide-react';
 import { useFinancialData } from '../backend/FinancialDataContext';
 import ChatInterface from './ChatInterface';
 
@@ -125,124 +128,122 @@ const StoryNavigation = ({ onPrevious, onNext }) => {
 };
 
 // Radar Chart Component for Persona Confidence
+// Improved RadarChart component with icons but simpler design
 const RadarChart = ({ scores }) => {
-    const iconSize = 16;
-    const personaIcons = [
-      { icon: <Briefcase size={iconSize} />, name: "Budgeting Maestro", color: "#f43f5e" },
-      { icon: <CreditCard size={iconSize} />, name: "Spontaneous Spender", color: "#fb923c" },
-      { icon: <DollarSign size={iconSize} />, name: "Cautious Saver", color: "#fbbf24" },
-      { icon: <TrendingUp size={iconSize} />, name: "Investment Enthusiast", color: "#4ade80" },
-      { icon: <Target size={iconSize} />, name: "Deal Hunter", color: "#22d3ee" },
-      { icon: <Coffee size={iconSize} />, name: "Minimalist", color: "#818cf8" },
-      { icon: <Heart size={iconSize} />, name: "Generous Giver", color: "#a855f7" },
-      { icon: <Map size={iconSize} />, name: "Financial Adventurer", color: "#ec4899" }
-    ];
-    
-    const sides = 8;
-    const size = 120;
-    const centerX = size / 2;
-    const centerY = size / 2;
-    const radius = size * 0.4;
-    
-    // Force scores array to be the correct format and multiplied to make it visible
-    const defaultScores = [0.05, 0.6, 0.1, 0.05, 0.05, 0.05, 0.05, 0.05];
-    const scoreArray = Array.isArray(scores) && scores.length === sides ? scores : defaultScores;
-    
-    // Calculate points for the chart
-    const points = [];
-    for (let i = 0; i < sides; i++) {
+  const sides = 8;
+  const size = 120;
+  const centerX = size / 2;
+  const centerY = size / 2;
+  const radius = size * 0.4;
+  
+  // Icons for each personality type
+  const iconSize = 16;
+  const personaIcons = [
+    { icon: <Briefcase size={iconSize} />, color: "#f43f5e" },
+    { icon: <CreditCard size={iconSize} />, color: "#fb923c" },
+    { icon: <DollarSign size={iconSize} />, color: "#fbbf24" },
+    { icon: <TrendingUp size={iconSize} />, color: "#4ade80" },
+    { icon: <Target size={iconSize} />, color: "#22d3ee" },
+    { icon: <Coffee size={iconSize} />, color: "#818cf8" },
+    { icon: <Heart size={iconSize} />, color: "#a855f7" },
+    { icon: <Map size={iconSize} />, color: "#ec4899" }
+  ];
+  
+  // Make scores visible by ensuring minimum values
+  const enhancedScores = scores.map(score => Math.max(score, 0.1));
+  
+  // Calculate points for the data polygon
+  const getPoints = (values) => {
+    return Array(sides).fill().map((_, i) => {
       const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
-      const value = scoreArray[i] || 0.1; // Default to 0.1 if undefined
-      const pointRadius = radius * value;
-      const x = centerX + pointRadius * Math.cos(angle);
-      const y = centerY + pointRadius * Math.sin(angle);
-      points.push({ x, y, angle });
-    }
-    
-    // Create polygon points string
-    const polygonPoints = points.map(p => `${p.x},${p.y}`).join(' ');
-    
-    // Calculate icon positions (slightly outside the radar)
-    const iconPositions = [];
-    for (let i = 0; i < sides; i++) {
-      const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
-      const iconRadius = radius * 1.3; // Place icons outside the radar
-      const x = centerX + iconRadius * Math.cos(angle);
-      const y = centerY + iconRadius * Math.sin(angle);
-      iconPositions.push({ x, y });
-    }
-    
-    return (
-      <div className="relative mx-auto" style={{ width: size, height: size }}>
-        <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
-          {/* Background shapes */}
-          {[0.25, 0.5, 0.75, 1].map((level, i) => (
-            <polygon 
+      const value = values[i] || 0.1;
+      const r = radius * value;
+      return `${centerX + r * Math.cos(angle)},${centerY + r * Math.sin(angle)}`;
+    }).join(' ');
+  };
+  
+  // Calculate icon positions
+  const iconPositions = Array(sides).fill().map((_, i) => {
+    const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+    const iconRadius = radius * 1.3; // Place icons outside the radar
+    return {
+      x: centerX + iconRadius * Math.cos(angle),
+      y: centerY + iconRadius * Math.sin(angle)
+    };
+  });
+  
+  return (
+    <div className="relative mx-auto" style={{ width: size, height: size }}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+        {/* Background circle */}
+        <circle 
+          cx={centerX} 
+          cy={centerY} 
+          r={radius} 
+          fill="none" 
+          stroke="rgba(255,255,255,0.1)" 
+          strokeWidth="1" 
+        />
+        
+        {/* Radar lines */}
+        {Array(sides).fill().map((_, i) => {
+          const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+          return (
+            <line 
               key={i}
-              points={Array(sides).fill().map((_, idx) => {
-                const angle = (Math.PI * 2 * idx) / sides - Math.PI / 2;
-                const r = radius * level;
-                return `${centerX + r * Math.cos(angle)},${centerY + r * Math.sin(angle)}`;
-              }).join(' ')}
-              fill="none"
+              x1={centerX}
+              y1={centerY}
+              x2={centerX + radius * Math.cos(angle)}
+              y2={centerY + radius * Math.sin(angle)}
               stroke="rgba(255,255,255,0.1)"
               strokeWidth="1"
             />
-          ))}
-          
-          {/* Radar lines */}
-          {Array(sides).fill().map((_, i) => {
-            const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
-            return (
-              <line 
-                key={i}
-                x1={centerX}
-                y1={centerY}
-                x2={centerX + radius * Math.cos(angle)}
-                y2={centerY + radius * Math.sin(angle)}
-                stroke="rgba(255,255,255,0.1)"
-                strokeWidth="1"
-              />
-            );
-          })}
-          
-          {/* Data polygon */}
-          <polygon 
-            points={polygonPoints}
-            fill="rgba(236, 72, 153, 0.2)"
-            stroke="#ec4899"
-            strokeWidth="2"
-          />
-          
-          {/* Points */}
-          {points.map((point, i) => (
-            <circle 
+          );
+        })}
+        
+        {/* Data polygon */}
+        <polygon 
+          points={getPoints(enhancedScores)}
+          fill="rgba(236, 72, 153, 0.3)"
+          stroke="#ec4899"
+          strokeWidth="2"
+        />
+        
+        {/* Points on the polygon */}
+        {Array(sides).fill().map((_, i) => {
+          const angle = (Math.PI * 2 * i) / sides - Math.PI / 2;
+          const value = enhancedScores[i] || 0.1;
+          const r = radius * value;
+          return (
+            <circle
               key={i}
-              cx={point.x}
-              cy={point.y}
+              cx={centerX + r * Math.cos(angle)}
+              cy={centerY + r * Math.sin(angle)}
               r="3"
               fill="#ec4899"
             />
-          ))}
-        </svg>
-        
-        {/* Icons */}
-        {iconPositions.map((pos, i) => (
-          <div 
-            key={i}
-            className="absolute flex items-center justify-center rounded-full bg-gray-900 p-1 transform -translate-x-1/2 -translate-y-1/2"
-            style={{ 
-              left: pos.x, 
-              top: pos.y,
-              color: personaIcons[i].color,
-            }}
-          >
-            {personaIcons[i].icon}
-          </div>
-        ))}
-      </div>
-    );
-  };
+          );
+        })}
+      </svg>
+      
+      {/* Icons */}
+      {iconPositions.map((pos, i) => (
+        <div 
+          key={i}
+          className="absolute flex items-center justify-center rounded-full bg-gray-900 p-1 transform -translate-x-1/2 -translate-y-1/2"
+          style={{ 
+            left: pos.x, 
+            top: pos.y,
+            color: personaIcons[i].color,
+            opacity: enhancedScores[i] > 0.2 ? 1 : 0.5  // Highlight relevant icons
+          }}
+        >
+          {personaIcons[i].icon}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const InsightsScreen = ({ setCurrentScreen }) => {
   const { privacyLevel, insights, shareInsight, financialData } = useFinancialData();
@@ -752,8 +753,10 @@ const InsightsScreen = ({ setCurrentScreen }) => {
                 
                 {/* Radar Chart with Legend */}
                 <div className="bg-black bg-opacity-30 p-3 rounded-lg">
-                  <p className="text-xs text-white text-center mb-2">Personality Analysis</p>
+                <p className="text-xs text-white text-center mb-4">Personality Analysis</p>
+                <div className="mt-4 pt-2">
                   <RadarChart scores={persona_scores} />
+                </div>
                   
                   {/* Legend - with horizontal scroll for small screens */}
                   <div className="mt-2 overflow-x-auto pb-1">
@@ -876,24 +879,34 @@ const InsightsScreen = ({ setCurrentScreen }) => {
           </div>
         </div>
         
-        {/* Footer */}
-        <div className="p-4 border-t border-gray-800">
-          <div className="flex space-x-2">
-            <button 
-              className="flex-1 py-2 rounded-lg border border-gray-700 font-medium flex items-center justify-center bg-gray-900 text-white text-sm"
-              onClick={handleShare}
-            >
-              <Share2 size={14} className="mr-1 text-pink-400" /> Share
-            </button>
-            <button 
-              className="flex-1 py-2 rounded-lg font-medium flex items-center justify-center text-white text-sm"
-              style={{ background: 'linear-gradient(to right, #f43f5e, #fb923c, #fbbf24, #4ade80, #22d3ee, #818cf8, #a855f7)' }}
-              onClick={() => setCurrentScreen('landing')}
-            >
-              More Insights
-            </button>
+          {/* Footer */}
+          <div className="p-4 border-t border-gray-800">
+            <div className="flex space-x-2">
+              <button 
+                className="flex-1 py-2 rounded-lg border border-gray-700 font-medium flex items-center justify-center bg-gray-900 text-white text-sm"
+                onClick={handleShare}
+              >
+                <Share2 size={14} className="mr-1 text-pink-400" /> Share
+              </button>
+              <button 
+                className="flex-1 py-2 rounded-lg font-medium flex items-center justify-center text-white text-sm"
+                style={{ background: 'linear-gradient(to right, #f43f5e, #fb923c, #fbbf24, #4ade80, #22d3ee, #818cf8, #a855f7)' }}
+                onClick={() => setCurrentScreen('landing')}
+              >
+                More Insights
+              </button>
+            </div>
+            
+            {/* Battle Arena Button */}
+            <div className="mt-2">
+              <button 
+                className="w-full py-2 rounded-lg border border-gray-700 font-medium flex items-center justify-center bg-gray-900 text-white text-sm"
+                onClick={() => setCurrentScreen('battleArena')}
+              >
+                <Sword size={14} className="mr-1 text-purple-400" /> Financial Battle Arena
+              </button>
+            </div>
           </div>
-        </div>
         
         {/* Chat Interface Modal */}
         {showChat && financialData?.persona && (

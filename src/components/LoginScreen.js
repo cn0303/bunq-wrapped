@@ -44,8 +44,8 @@ const LoginScreen = ({ onLogin }) => {
       {/* Header with rainbow border */}
       <div className="p-4 text-center relative">
         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-violet-500"></div>
-        <h1 className="text-2xl font-bold text-white">Financial Story</h1>
-        <p className="text-gray-400 text-sm">Sign in to view your financial insights</p>
+        <h1 className="text-2xl font-bold text-white">buniq</h1>
+        <p className="text-gray-400 text-sm">Sign in to view your financial insights of 2024</p>
       </div>
       
       {/* Content */}
@@ -107,7 +107,7 @@ const LoginScreen = ({ onLogin }) => {
       {/* Footer */}
       <div className="p-4 border-t border-gray-800">
         <p className="text-center text-gray-500 text-xs">
-          © 2025 Bunq Financial Story. All rights reserved.
+          Bunq Financial Story - Hackathon 6.0.
         </p>
       </div>
     </div>
